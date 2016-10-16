@@ -17,4 +17,5 @@ where:
 
 | **Mission name**                   | **Folder**                             | **Author**     | **Col·laboradors**           | **Uses A3-BMT** |
 | ---------------------------------- | -------------------------------------- | -------------- | ---------------------------- | --------------- |
+| **Operation Flypaper**             | co@08-14_OpFlypaper.Tanoa              | Magnetar       | -                            | Yes             |
 | **Retaliation**                    | co@08-12_Retaliation.Kunduz            | Magnetar       | -                            | Yes             |
