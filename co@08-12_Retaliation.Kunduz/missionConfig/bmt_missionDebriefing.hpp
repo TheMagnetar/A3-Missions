@@ -14,49 +14,72 @@
 //=======================================================================================================//
 class CfgDebriefing {
     class EndingSuccess1 {
-        title = "Ending #1";
+        title = "Total success";
         subtitle = "";
-        description = "*** Debriefing Ending #1. ***";
+        description = "Allied forces rescued all the marines, and they have dealt with the insurgent Warlord.";
         pictureBackground = "";
         picture = "b_inf";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
     class EndingSuccess2 {
-        title = "Ending #2";
+        title = "Partial success";
         subtitle = "";
-        description = "*** Debriefing Ending #2. ***";
+        description = "Allied forces were not able to rescue all the marines, but they dealt with the insurgent Warlord.";
         pictureBackground = "";
         picture = "b_inf";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
-    //class EndingSuccess3, EndingSuccess4, ....
+    class EndingSuccess3 {
+        title = "Partial success";
+        subtitle = "";
+        description = "Allied forces rescued all the captured marines, but they could not deal with the insurgent Warlord.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = {0.0,0.3,0.6,1};
+    };
+
+    class EndingSuccess4 {
+        title = "Partial success";
+        subtitle = "";
+        description = "Allied forces were not able to rescue all the marines, and they could not deal with the insurgent Warlord.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = {0.0,0.3,0.6,1};
+    };
+
+    class EndingSuccess5 {
+        title = "Partial success";
+        subtitle = "";
+        description = "Allied forces could not rescue any of the captured marines, but they dealt with the insurgent Warlord.";
+        pictureBackground = "";
+        picture = "b_inf";
+        pictureColor[] = {0.0,0.3,0.6,1};
+    };
 
     class EndingFailure1 {
-        title = "Mission failed #1";
+        title = "Mission failed";
         subtitle = "";
-        description = "*** Debriefing for mission failed #1. ***";
+        description = "Allied forces could not rescue any of the captured marines and they could not deal with the insurgent Warlord.";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
     class EndingFailure2 {
-        title = "Mission failed #2";
+        title = "Mission failed";
         subtitle = "";
-        description = "*** Debriefing for mission failed #2. ***";
+        description = "Allied forces have been taken down, but the insurgent Warlord have been dealt with.";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
-    //class EndingFailure3, EndingFailure4, ....
-
     class Disaster {
         title = "Disaster";
         subtitle = "";
-        description = "*** Definition of disaster. ***";
+        description = "Allied forces have been taken down without accomplishing any objectives.";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};

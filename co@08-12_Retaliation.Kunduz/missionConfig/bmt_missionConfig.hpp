@@ -13,24 +13,24 @@
 //=======================================================================================================//
 class Header {
     gameType = Coop;           // Game type: https://community.bistudio.com/wiki/Multiplayer_Game_Types
-    minPlayers = 1;            // Minimum number of players.
-    maxPlayers = 14;           // Maximum number of players.
+    minPlayers = 8;            // Minimum number of players.
+    maxPlayers = 12;           // Maximum number of players.
     playerCountMultipleOf = 1; // Balancing in tvt or pvp game types.
 };
 
 class bmt_config {
-    bmt_config_testedAddons = "*** List of addons with the corresponding tested version number. ***<br/>*** Each addon must have its own line. ***";
+    bmt_config_testedAddons = "- Advanced Combat Environment 3 (ACE3) v3.5.1.<br/>- Advanced Combat Radio Environment 2 (ACRE2) v2.1.0.<br/>- Advanced Light Infantry Virtual Environment (ALIVE) v1.0.2.<br/>- Community Base Addons (CBA) v2.3.0.<br/>- Dynamic-AI-Creator (DAC) v3.1b (addon version).<br/>- Kunduz, Afghanistan v1.08.<br/>- Leights Opfor Pack (LOP) v1.7.1.<br/>- RHS United States Army Forces (RHS USAF) v0.4.0.2.<br/>- RHS Armed Forces of the Russian Federation (RHS AFRF) v0.4.0.2.<br/>- Task Force Arrowhead Radio (TFAR) v0.9.7.3.";
     bmt_config_templateVersion = "v1.0 (2016-05-14).";
-    bmt_config_missionVersion = "vX.Y (date).";
-    bmt_config_missionCollaborators = "TheMagnetar (BMT) and *** Possible collaborators ***.";
-    bmt_config_missionDifficulty = "*** Expected mission difficulty. ***";
-    bmt_config_missionSummary = "*** Mission summary for administrators. ***";
-    bmt_config_missionNotesAndRemarks = "*** Additional notes and remarks from the mission author. ***";
+    bmt_config_missionVersion = "v1.0 (2016-01-18).";
+    bmt_config_missionCollaborators = "-.";
+    bmt_config_missionDifficulty = "High.";
+    bmt_config_missionSummary = """Retaliation"" is a mission in Kunduz, Afghanistan, after the events of the ""Home sweet home..."" mission. In this mission, the players must rescue the marines captured by the insurgent afghan forces and recover any information that could have been extracted from the marines. Tasks are not updated once they are completed and it is up to the players to decide if it has been completed or not. Patrols and enemy units are totally random, and the mission briefing is performed at the beginning using ACE 3 slideshow. Players have at their disposal CAS and EVAC.";
+    bmt_config_missionNotesAndRemarks = "-.";
 
 
     bmt_config_jipAllowedTime = 300;   // JIP players are enabled until the specified time (in seconds). To
                                        // enable always JIP players set to -1.
-    bmt_config_numAllowedRespawns = -99; // Number of allowed respawns. Set to -1 to have unlimited respawns,
+    bmt_config_numAllowedRespawns = 0; // Number of allowed respawns. Set to -1 to have unlimited respawns,
                                        // 0 to disable respawn and a positive number to limit the number of
                                        // respawns.
 };
@@ -39,15 +39,15 @@ class bmt_config {
 // Loading screen: https://community.bistudio.com/wiki/Description.ext                                   //
 //=======================================================================================================//
 
-onLoadName = "*** Mission name. ***";            // Mission name.
-onLoadMission = "*** Mission description. ***";  // Brief mission description.
+onLoadName = "Retaliation";            // Mission name.
+onLoadMission = "Rescue the surviving marines.";  // Brief mission description.
 onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)";  // Message shown while loading introduction.
 onLoadIntroTime = 0;                             // Show (1) or hide (0) date and time on when loading introduction.
 onLoadMissionTime = 0;                           // Show (1) or hide (0) date and time on when loading mission.
-author = "*** Author(s). ***";                   // Author.
+author = "TheMagnetar";                          // Author.
 loadScreen = "images\loadScreen.jpg";            // Image displayed when loading mission.
 overviewPicture = "images\overviewPicture.jpg";  // Imatge displayed when selecting mission (aspect 2:1).
-overviewText = "*** Text to show. ***";          // Text shown when selecting mission.
+overviewText = "After the attack of troops heading home, allied forces have decided to increase the intensity of the operations in Kunduz in order to deliver a clear message to the insurgent forces: all attacks will be answered in kind! The main objective is to rescue the few surviving marines and eliminate any evidence of leaked information obtained through torture.";          // Text shown when selecting mission.
 
 //=======================================================================================================//
 // Respawn Settings: https://community.bistudio.com/wiki/Arma_3_Respawn                                  //

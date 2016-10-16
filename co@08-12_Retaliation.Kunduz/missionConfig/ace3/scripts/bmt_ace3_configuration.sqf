@@ -16,7 +16,7 @@ private ["_heliFRIES"];
 // Unit name variables must be declared as string.
 
 // Medical
-_medics = [];
+_medics = ["bmt_Alpha1_5"];
 _medicVehicles = [];
 _medicFacilities = [];
 _doctors = [];
@@ -30,8 +30,8 @@ _repairVehicles = [];
 _repairFacilities = [];
 
 // Captives
-_surrenderedUnits = [];
-_handcuffedUnits = [];
+_surrenderedUnits = ["bmt_marine1","bmt_marine2","bmt_marine3","bmt_marine4"];
+_handcuffedUnits = ["bmt_marine1","bmt_marine2","bmt_marine3","bmt_marine4"];
 
 // Fastroping
 _heliFRIES = [];

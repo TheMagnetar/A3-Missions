@@ -21,7 +21,7 @@ private ["_uavMarker", "_uavMarkerType", "_uavMarkerColor"];
 waitUntil {!isNil "bmt_param_debugOutput"};
 
 // Type of introduction: "blackScreen", "uavFeed"
-_introType = "blackScreen";
+_introType = "uavFeed";
 
 _quotes = ["Whoever said the pen is mightier than the sword obviously never encountered automatic weapons.\nDouglas MacArthur."];
 
@@ -131,7 +131,11 @@ switch (_unitFaction) do {
 
     // RHS: USAF "United States Marine Corps" (D) faction.
     case "rhs_faction_usmc_d": {
-        _missionLocation = "Location"; _uavMarker = "marker"; _uavMarkerType = [];
+        _missionLocation = "Kunduz, Afghanistan"; _uavMarker = "markerRescue";
+        _uavMarkerType = [
+            // add Icon at enemy/target position
+            ["\a3\ui_f\data\map\markers\military\objective_ca.paa", EAST call BIS_fnc_sideColor, markerPos "markerRescue", 1, 1, 0, "Rescue the marines", 0]
+        ];
     };
 
     // RHS: USAF "United States Marine Corps" (WD) faction.
@@ -141,7 +145,11 @@ switch (_unitFaction) do {
 
     // RHS: USAF "United States Navy" faction.
     case "rhs_faction_usn": {
-        _missionLocation = "Location"; _uavMarker = "marker"; _uavMarkerType = [];
+        _missionLocation = "Kunduz, Afghanistan"; _uavMarker = "markerRescue";
+        _uavMarkerType = [
+            // add Icon at enemy/target position
+            ["\a3\ui_f\data\map\markers\military\objective_ca.paa", EAST call BIS_fnc_sideColor, markerPos "markerRescue", 1, 1, 0, "Rescue the marines", 0]
+        ];
     };
 
     // RHS: Insurgents faction.

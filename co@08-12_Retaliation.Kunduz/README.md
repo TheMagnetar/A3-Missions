@@ -1,37 +1,128 @@
-# Mission name
+# Retaliation
 
 <Banner URL>
 
 Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
 
-**Mission name**: Mission name.
+**Mission name**: Retaliation.
 
-**Version**: vx.x (date).
+**Version**: v1.0 (2016-01-18).
 
-**Author**: Author name.
+**Author**: Magnetar.
 
-**Contributors**: Names of the contributers.
+**Contributors**: -.
 
-**Game type**: Game type (Coop, TvT, PvP, ZvZ, ...).
+**Game type**: Coop, TvT, PvP, ZvZ.
 
-**Minimum number of players**: Minimum number of players suggested by the author.
+**Minimum number of players**: 8.
 
-**Minimum number of players**: Maximum number of players suggested by the author.
+**Minimum number of players**: 12.
 
-**Respawn**: Respawn type (None, bird, base, ...).
+**Respawn**: None (Spectator).
 
-**Dificulty**: Mission Dificulty.
+**Dificulty**: High.
 
-**Mission summary**: Brief description of the mission.
+**Mission summary**: *Retaliation* is a mission in Kunduz, Afghanistan, after the events of the
+*Home sweet home...* mission. In this mission, the players must rescue the marines captured by the
+insurgent afghan forces and recover any information that could have been extracted from the marines. Tasks
+are not updated once they are completed and it is up to the players to decide if it has been completed or
+not. Patrols and enemy units are totally random, and the mission briefing is performed at the beginning
+using ACE 3 slideshow. Players have at their disposal CAS and EVAC.
 
-**Arma 3 Basic Mission Template (A3-BMT)**: v1.0 (https://github.com/CavallersDelCel/1RA_Plantilla_Missio)
-by TheMagnetar.
+**Arma 3 Basic Mission Template (A3-BMT)**: v1.0 (https://github.com/ied-forum/Basic-Mission-Template) by TheMagnetar.
 
-**Necessary or recommended addons**: List of necessary and/or recommended addons.
+**Necessary or recommended addons**: This mission works with the following set of addons:
+* Advanced Combat Environment 3 (ACE3) v3.5.1. **Required**.
+* Advanced Combat Radio Environment 2 (ACRE2) v2.1.0.
+* Advanced Light Infantry Virtual Environment (ALIVE) v1.0.2. **Required**.
+* Community Base Addons (CBA) v2.3.0. **Required**.
+* Dynamic-AI-Creator (DAC) v3.1b (addon version). **Required**.
+* Kunduz, Afghanistan v1.08. **Required**.
+* Leights Opfor Pack (LOP) v1.7.1. **Required**.
+* RHS United States Army Forces (RHS USAF) v0.4.0.2. **Required**.
+* RHS Armed Forces of the Russian Federation (RHS AFRF) v0.4.0.2. **Required**.
+* Task Force Arrowhead Radio (TFAR) v0.9.7.3.
 
 ## Detailed mission description
 
-Detailed description of the mission. This text can be the same as the one posted on the forums.
+### SITREP
+
+Last week, a marine convoy with troops heading home were brutally ambushed, and the few survivors were
+captured. The attack authors are a new insurgent radical group in the region of Kunduz.
+
+Due to the active troop withdrawal due to political reasons, a small but highly trained infantry squad has
+been charged with the task of rescuing the captured marines. It is expected, with this mission, to deliver
+a clear message to any insurgent group: all attacks will be answered in kind!
+
+### MISSION AND EXECUTION
+
+Two infantry teams and one sniper team will be deployed in Kunduz, Afghanistan. Their objective will
+consist on rescuing, with the collaboration of the Afghan Police, the marines captured last week in an
+insurgent attack never seen before. With all probability, the captured marines have been subjected to
+torture. It is of high priority to recover any information that could have been extracted.
+
+Due to the strong presence of enemy troops and the civilian hostility, it has been considered necessary to
+assign the close air support unit (CAS) *November* and the evacuation team *Rain* to the *Alpha 1* squad.
+According to Intel reports, enemy units are poorly equipped and they have none or very few ways of
+effectively counterattacking an air assault or an assault during the night.
+
+**Main tasks**
+* Rescue the captured marines during the enemy attack that took place last week.
+* Recover any leaked Intel report.
+
+**Secondary tasks**
+* Capture dead or alive the new insurgent warlord.
+
+**Execution**
+* Insertion at __LZ1__.
+* Contact with the __Afghan police__ in order to exchange information on the location of the new warlord.
+* Approach the area of operations and __rescue the captured marines__.
+* Minimise civilian casualties in order to gain their respect and collaboration.
+* Head towards the allied base Foxtrot from the __north-east__ in order to provide with medical treatment
+to the rescued marines.
+
+### INTEL
+
+**Allied forces**
+* Squad *Alpha 1*.
+* CAS helicopter *November*.
+* Evacuation team *Rain*: 3 helicopters without offensive capabilities.
+
+**Enemy forces**
+* A strong presence of enemy troops is expected. Insurgent forces are poorly equipped and they probably do
+not have night vision.
+
+**Civilians**
+Strong civilian presence in the area of operations. It has been observed in previous operations that they
+simpathise with insurgent forces and they are slightly hostile towards allied forces.
+
+### ADMINISTRATION / LOGISTICS
+
+**Support**
+* *November 1*: CAS support.
+* *Rain 1-3*: Three helicopters without offensive capabilities used mainly for transport.
+
+**Supply**
+* Without resupply.
+
+### ROLES AND RADIO FREQUENCIES
+
+* Squad *Alpha 1*: Radio frequency 200 kHz.
+  * Fireteam *Alpha 1-1*: Radio frequency 201 kHz.
+    * Squad leader.
+    * Rifleman (UAV).
+    * Automatic rifleman (M249).
+    * Grenadier.
+    * Combat medic.
+  * Fireteam *Alpha 1-2*: Radio frequency 202 kHz.
+    * Team leader.
+    * AT (Javelin).
+    * Machinegunner (M240B).
+    * Rifleman (AT4).
+    * Grenadier.
+  * Sniper team *Alpha 1-3*: Radio frequency 203 kHz.
+    * Sniper.
+    * Spotter.
 
 # Arma 3 Basic Mission Template (A3-BMT)
 
