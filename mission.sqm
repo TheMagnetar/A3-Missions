@@ -1,0 +1,221 @@
+version=52;
+class EditorData
+{
+    moveGridStep=1;
+    angleGridStep=0.2617994;
+    scaleGridStep=1;
+    autoGroupingDist=10;
+    toggles=1;
+    class ItemIDProvider
+    {
+        nextID=8;
+    };
+    class MarkerIDProvider
+    {
+        nextID=1;
+    };
+    class Camera
+    {
+        pos[]={1623.1796,58.154259,5139.4565};
+        dir[]={-0.0067139035,-0.62335265,0.78191876};
+        up[]={-0.0053522517,0.78193957,0.62333006};
+        aside[]={0.99996936,-3.6277697e-008,0.0085860938};
+    };
+};
+binarizationWanted=0;
+addons[]=
+{
+    "A3_Weapons_F_Ammoboxes",
+    "rhsusf_c_troops"
+};
+randomSeed=13449136;
+class ScenarioData
+{
+    author="Magnetar";
+};
+class CustomAttributes
+{
+    class Category0
+    {
+        name="Scenario";
+        class Attribute0
+        {
+            property="EnableDebugConsole";
+            expression="true";
+            class Value
+            {
+                class data
+                {
+                    class type
+                    {
+                        type[]=
+                        {
+                            "SCALAR"
+                        };
+                    };
+                    value=0;
+                };
+            };
+        };
+        nAttributes=1;
+    };
+};
+class Mission
+{
+    class Intel
+    {
+        briefingName="Arma 3 Basic Mission Template (A3-BMT)";
+        overviewText="A mission using the Arma 3 Basic Mission Template (A3-BMT).";
+        startWeather=0.84999996;
+        startFog=0.34999999;
+        startWind=0.079999998;
+        startWindDir=15;
+        startRain=0.31999999;
+        startLightnings=0.029999999;
+        startWaves=0.099999994;
+        startGust=0.28;
+        forecastWeather=0.84999996;
+        forecastWind=0.039999999;
+        forecastWaves=0.099999994;
+        forecastLightnings=0.099999994;
+        forecastGust=0.81;
+        forecastWindDir=305;
+        rainForced=1;
+        lightningsForced=1;
+        wavesForced=1;
+        windForced=1;
+        year=2035;
+        month=7;
+        day=6;
+        hour=12;
+        minute=0;
+        startFogDecay=0.013;
+        forecastFogDecay=0.013;
+    };
+    class Entities
+    {
+        items=5;
+        class Item0
+        {
+            dataType="Object";
+            class PositionInfo
+            {
+                position[]={1621.6919,5.6887245,5181.668};
+            };
+            side="Empty";
+            flags=4;
+            class Attributes
+            {
+                skill=0.60000002;
+                init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+            };
+            id=0;
+            type="Box_NATO_Wps_F";
+        };
+        class Item1
+        {
+            dataType="Object";
+            class PositionInfo
+            {
+                position[]={1629.6613,5.6887245,5187.8447};
+            };
+            side="Empty";
+            flags=4;
+            class Attributes
+            {
+                skill=0.60000002;
+                init="[""blx"",this,""blu_f""] call bmt_fnc_configEquipment;";
+            };
+            id=1;
+            type="Box_NATO_Wps_F";
+        };
+        class Item2
+        {
+            dataType="Group";
+            side="West";
+            class Entities
+            {
+                items=3;
+                class Item0
+                {
+                    dataType="Object";
+                    class PositionInfo
+                    {
+                        position[]={1629.7225,5.5014391,5181.7383};
+                    };
+                    side="West";
+                    flags=6;
+                    class Attributes
+                    {
+                        skill=0.60000002;
+                        init="[""Bravo"", 3,""sl"",this] call bmt_fnc_configUnit;";
+                        name="bmt_A1_SL";
+                        description="Squad Leader";
+                        isPlayer=1;
+                        isPlayable=1;
+                    };
+                    id=3;
+                    type="rhsusf_army_ocp_rifleman_m4";
+                };
+                class Item1
+                {
+                    dataType="Object";
+                    class PositionInfo
+                    {
+                        position[]={1634.7225,5.5014391,5180.0879};
+                    };
+                    side="West";
+                    flags=4;
+                    class Attributes
+                    {
+                        skill=0.60000002;
+                        init="[""Alpha"", 1,""me"",this] call bmt_fnc_configUnit;";
+                        name="bmt_A1_ME";
+                        isPlayable=1;
+                    };
+                    id=4;
+                    type="rhsusf_army_ocp_medic";
+                };
+                class Item2
+                {
+                    dataType="Object";
+                    class PositionInfo
+                    {
+                        position[]={1624.7225,5.5014391,5180.0879};
+                    };
+                    side="West";
+                    flags=4;
+                    class Attributes
+                    {
+                        skill=0.60000002;
+                        init="[""Alpha"", 1,""en"",this] call bmt_fnc_configUnit;";
+                        name="bmt_A1_EN";
+                        isPlayable=1;
+                    };
+                    id=5;
+                    type="rhsusf_army_ocp_engineer";
+                };
+            };
+            class Attributes
+            {
+            };
+            id=2;
+        };
+        class Item3
+        {
+            dataType="Marker";
+            position[]={1800.0736,5.5,5836.7607};
+            name="respawn_west";
+            type="Empty";
+            id=6;
+        };
+        class Item4
+        {
+            dataType="Marker";
+            position[]={2678.6409,36.586018,5208.6025};
+            name="respawn_rhs_faction_usarmy_d";
+            type="Empty";
+            id=7;
+        };
+    };
+};
