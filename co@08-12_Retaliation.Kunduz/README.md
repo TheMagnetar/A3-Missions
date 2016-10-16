@@ -1,6 +1,8 @@
 # Retaliation
 
-<Banner URL>
+<p align="center">
+    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co%4008-12_Retaliation.Kunduz/images/PortadaForum.jpg">
+</p>
 
 Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
 
