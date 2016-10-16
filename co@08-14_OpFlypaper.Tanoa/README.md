@@ -61,7 +61,7 @@ The Russian airfield has its static defenses not yet completed. The team should 
 sabotage the enemy air assets. Contact with enemy patrols should be minimised: stealth is a priority.
 
 <p align="center">
-    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co%4008-14_OpFlypaper.Tanoa/images/Map.png">
+    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co@08-14_OpFlypaper.Tanoa/images/Map.png">
 </p>
 
 **Main task**
