@@ -1,7 +1,7 @@
 # Operation Flypaper
 
 <p align="center">
-    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co@08-14_OpFlypaper.Tanoa/images/PortadaForum.jpg">
+    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co%4008-14_OpFlypaper.Tanoa/images/PortadaForum.jpg">
 </p>
 
 Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
