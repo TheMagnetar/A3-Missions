@@ -1,37 +1,118 @@
-# Mission name
+# Operation Flypaper
 
-<Banner URL>
+<p align="center">
+    <img src="https://github.com/CavallersDelCel/1RA_Missions_Internes/blob/master/1RA_co%4008-14_Flypaper.Tanoa/images/PortadaForum.jpg">
+</p>
 
 Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
 
-**Mission name**: Mission name.
+**Mission name**: Operation Flypaper.
 
-**Version**: vx.x (date).
+**Version**: v1.0 (2016/10/15).
 
-**Author**: Author name.
+**Author**: TheMagnetar.
 
-**Contributors**: Names of the contributers.
+**Contributors**: -.
 
-**Game type**: Game type (Coop, TvT, PvP, ZvZ, ...).
+**Game type**: Coop.
 
-**Minimum number of players**: Minimum number of players suggested by the author.
+**Minimum number of players**: 8.
 
-**Minimum number of players**: Maximum number of players suggested by the author.
+**Minimum number of players**: 14.
 
-**Respawn**: Respawn type (None, bird, base, ...).
+**Respawn**: None (Spectator).
 
-**Dificulty**: Mission Dificulty.
+**Dificulty**: High.
 
-**Mission summary**: Brief description of the mission.
+**Mission summary**: "Operation Flypaper" is a mission in Tanoa in which the players have to sabotage the
+enemy airbase. The airbase does not have static defenses and only infantry patrols and one wheeled vehicle
+are present. The players are inserted using HALO. Tasks are not updated once they are completed and it is
+up to the players to decide if it has been completed or not. Patrols and enemy units are totally random.
 
 **Arma 3 Basic Mission Template (A3-BMT)**: v1.0 (https://github.com/CavallersDelCel/1RA_Plantilla_Missio)
 by TheMagnetar.
 
 **Necessary or recommended addons**: List of necessary and/or recommended addons.
 
+* Advanced Combat Environment (ACE 3) v3.8.0.
+* Advanced Combat Radio Environment (ACRE 2) v2.2.0.
+* Advanced Light Infantry Virtual Environment (ALiVE) v1.2.0. **Required**.
+* Community Base Addons (CBA) v3.1.0. **Required**.
+* Dynamic-AI-Creator (DAC) v3.1b addon version. **Required**.
+* RHS United States Armed Forces (RHS USAF) v0.4.1.1. **Required**.
+* RHS Armed Forces of the Russian Federation (RHS AFRF) v0.4.1.1. **Required**.
+* Task Force Arrowhead Radio (TFAR) v0.9.12.
+
 ## Detailed mission description
 
-Detailed description of the mission. This text can be the same as the one posted on the forums.
+### SITREP
+
+The Russian presence on Tanoa is reaching highly threating levels. For the past months they have been
+sending high amount of troops. The Russian interests on the island have collided several times with the
+allied forces and an all-out war is inevitable after the air attack last week on the allied forces on the
+island. The attack wiped out most of our forward bases. However, the rush of the Russian Federation in
+order to establish dominance has opened a window for us to counter attack and deliver a major blow to their
+aerial assets. The airfield defenses are still not completed and a small team should be able to infiltrate
+and sabotage them.
+
+### MISSION AND EXECUTION
+
+The Russian airfield has its static defenses not yet completed. The team should infiltrate the airfield and
+sabotage the enemy air assets. Contact with enemy patrols should be minimised: stealth is a priority.
+
+<p align="center">
+    <img src="https://github.com/CavallersDelCel/1RA_Missions_Internes/blob/master/1RA_co%4008-14_Flypaper.Tanoa/images/Map.png">
+</p>
+
+**Main task**
+* Destroy the enemy air assets on the Russian airfield.
+
+**Execution**
+* *Alpha* squad will HALO jump at the insertion point.
+* Destroy as many enemy air assets as possible.
+* Head towards the extraction point and blend in with the population.
+
+### INTEL
+
+**Allied forces**
+* Squad *Alpha 1*.
+
+**Enemy forces**
+* Enemy does not possess any static defenses.
+* Strong presence of infantry enemy patrols.
+* Low presence of wheeled vehicles.
+* Very low presence of mecanised infantry or armored vehicles.
+
+**Civilians**
+* Civilians live in the adjacent towns.
+
+### ADMINISTRATION/LOGISTICS
+
+**Support**
+* None
+
+**Supply**
+* Ammo box is delivered during HALO.
+
+### ROLES AND RADIO FREQUENCIES
+
+* Squad *Alpha 1*: frequency 200 kHz.
+  * Fireteam *Alpha 1-1*: Radio frequency 201 kHz.
+    * Squad leader.
+    * Explosives specialist.
+    * Rifleman (UAV).
+    * Automatic rifleman (M249).
+    * Combat medic.
+  * Fireteam *Alpha 1-2*: Radio frequency 202 kHz.
+    * Team leader.
+    * Rifleman (AT4).
+    * Machine gunner (M240B).
+    * Explosives specialist.
+    * Grenadier.
+    * Rifleman.
+  * Sniper team *Alpha 1-3*: Radio frequency 203 kHz.
+    * Sniper.
+    * Spotter.
 
 # Arma 3 Basic Mission Template (A3-BMT)
 
@@ -46,13 +127,13 @@ work required when editing a mission for Arma 3. Although originally envisaged t
 "1er Regiment Aerotransportat (1RA)" of the Catalan community of simulation "Cavallers del Cel", its scope
 has broaden since its adoption by other communities.
 
-## Requirements:
+### Requirements:
 
 The "Arma 3 Basic Mission Template (A3-BMT) has been designed to be flexible and to be independent from
 external addons. Any contributer that wants to add an external script must include it with an option to
 deactivate it.
 
-## Structure:
+### Structure:
 
 The template has the following folder structure:
 
@@ -91,7 +172,7 @@ The template has the following folder structure:
   * "\src\tfar": Scripts and functions to configure TFAR.
   * "\src\zeus": Scripts and functions to configure Zeus.
 
-## Supported addons
+### Supported addons
 
 The following is a list showing the currently supported addons.
 
@@ -108,7 +189,7 @@ The following is a list showing the currently supported addons.
   * Advanced Combat Radio Environment 2 (ACRE2): http://forums.bistudio.com/showthread.php?191848-ACRE2-Stable-Release.
   * Task Force Arrowhead Radio (TFAR): https://github.com/michail-nikolaev/task-force-arma-3-radio.
 
-## Supported factions
+### Supported factions
 
 The following list shows the supported factions for those scripts that allow a greater control degree of
 equipment and tasks:

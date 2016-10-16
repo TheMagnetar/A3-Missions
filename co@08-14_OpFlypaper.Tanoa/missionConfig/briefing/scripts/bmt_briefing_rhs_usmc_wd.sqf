@@ -15,40 +15,20 @@ private ["_credits", "_radio", "_adminLog", "_intel", "_missionExecution", "_sit
 // NOTES: CREDITS.                                                                                       //
 //=======================================================================================================//
 _credits = player createDiaryRecord ["diary", ["Credits","
-Mission created by <font color='#00FFFF'>*** Authors ***</font> for the community <font color='#00FFFF'>*** name of the community ***</font>.
-<br/><br/>
-With the collaboration of Magnetar (A3-BMT template) and *** possible collaborators ***.
+Mission created by <font color='#00FFFF'>TheMagnetar</font> for the community <font color='#00FFFF'>Cavallers del Cel</font>.
 "]];
 
 //=======================================================================================================//
 // NOTES: RADIO.                                                                                         //
 //=======================================================================================================//
 _radio = player createDiaryRecord ["diary", ["Radio frequencies","
-<font color='#FF0000' size='18'>Command</font>: 41 kHz.
-<br/><br/>
-<font color='#FF0000' size='18'>CAS</font>: 51 kHz.
-<br/><br/>
-<font color='#FF0000' size='18'>Artillery</font>: 61 kHz.
-<br/><br/>
-<font color='#FF0000' size='18'>Alpha</font>
-<br/>
 - Squad ""Alpha 1"": 200 kHz.
 <br/>
 - Fireteam ""Alpha 1-1"": 201 kHz.
 <br/>
 - Fireteam ""Alpha 1-2"": 202 kHz.
 <br/>
-- Fireteam ""Alpha 1-3"": 203 kHz.
-<br/><br/>
-<font color='#FF0000' size='18'>Bravo</font>
-<br/>
-- Squad ""Bravo 1"": 210 kHz.
-<br/>
-- Fireteam ""Bravo 1-1"": 211 kHz.
-<br/>
-- Fireteam ""Bravo 1-2"": 212 kHz.
-<br/>
-- Fireteam ""Bravo 1-3"": 213 kHz.
+- Sniper team ""Alpha 1-3"": 203 kHz.
 "]];
 
 //=======================================================================================================//
@@ -57,58 +37,63 @@ _radio = player createDiaryRecord ["diary", ["Radio frequencies","
 _adminLog = player createDiaryRecord ["diary", ["Administration/Logistics","
 <font color='#FF0000' size='18'>Support</font>
 <br/>
-*** Description, if they exist, of support units like CAS, field artillery, medevac, ... ***
+None
 <br/><br/>
 <font color='#FF0000' size='18'>Supply</font>
 <br/>
-*** Troop supply: additional ammunition, ... ***
+Ammo box is delivered during HALO.
 "]];
 
 //=======================================================================================================//
 // NOTES: INTEL.                                                                                         //
 //=======================================================================================================//
 _intel = player createDiaryRecord ["diary", ["Intel","
-*** Intelligence information. ***
-<br/><br/>
 <font color='#FF0000' size='18'>Enemy forces</font>
 <br/>
-*** Description of enemy forces.***
+- Enemy does not possess any static defenses.<br/>
+- Strong presence of infantry enemy patrols.<br/>
+- Low presence of wheeled vehicles.<br/>
+- Very low presence of mecanised infantry or armored vehicles.
 <br/><br/>
 <font color='#FF0000' size='18'>Allied forces</font>
 <br/>
-*** Description of allied forces. ***
+- Alpha squad.
+<br/><br/>
+<font color='#FF0000' size='18'>Civilians</font>
+- Civilians live in the adjacent towns.
 "]];
 
 //=======================================================================================================//
-// NOTES: EXECUTION.                                                                                     //
+// NOTES: MISSION AND EXECUTION.                                                                         //
 //=======================================================================================================//
 _missionExecution = player createDiaryRecord ["diary", ["Mission and Execution","
 <font color='#FF0000' size='18'>Mission</font>
 <br/>
-*** Mission description. ***
+The Russian airfield has its static defenses not yet completed. The team should infiltrate the airfield and
+sabotage the enemy air assets. Contact with enemy patrols should be minimised: stealth is a priority.
 <br/><br/>
 <font color='#FF0000' size='18'>Main tasks</font>
 <br/>
-- <font color='#00FFFF'>Main task 1</font>: *** Brief description ***.
-<br/>
-- <font color='#00FFFF'>Main task 2</font>: *** Brief description ***.
-<br/><br/>
-<font color='#FF0000' size='18'>Secondary tasks</font>
-<br/>
-- <font color='#00FFFF'>Secondary task 1</font>: *** Brief description ***.
-<br/>
-- <font color='#00FFFF'>Secondary task 2</font>: *** Brief description ***.
+- <font color='#00FFFF'>Main task</font>: Destroy the enemy air assets on the Russian airfield.
 <br/><br/>
 <font color='#FF0000' size='18'>Execution</font>
 <br/>
-*** Description, using bullet points, of how to execute the mission. ***
+- Alpha squad will HALO jump at the <marker name=""bmt_marker_insertion"">insertion point</marker>.<br/>
+- <marker name=""bmt_marker_sabotage"">Destroy</marker> as many enemy air assets as possible.<br/>
+- Head towards the <marker name=""bmt_marker_end"">extraction point</marker> and blend in with the population.
 "]];
 
 //=======================================================================================================//
 // NOTES: SITUATION.                                                                                     //
 //=======================================================================================================//
 _situation = player createDiaryRecord ["diary", ["SITREP","
-*** Brief description of the situation.***
+The Russian presence on Tanoa is reaching highly threating levels. For the past months they have been
+sending high amount of troops. The Russian interests on the island have collided several times with the
+allied forces and an all-out war is inevitable after the air attack last week on the allied forces on the
+island. The attack wiped out most of our forward bases. However, the rush of the Russian Federation in
+order to establish dominance has opened a window for us to counter attack and deliver a major blow to their
+aerial assets. The airfield defenses are still not completed and a small team should be able to infiltrate
+and sabotage them.
 "]];
 
 //============================================= END OF FILE =============================================//

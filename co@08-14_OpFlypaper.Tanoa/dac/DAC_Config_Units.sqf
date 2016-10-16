@@ -33,6 +33,7 @@
 //                        20        RHS UNITED STATES ARMY DESERT                                        //
 //                        21        RHS UNITED STATES MARINE CORPS WOODLAND                              //
 //                        22        RHS UNITED STATES MARINE CORPS DESERT                                //
+//                        23        RHS RUSSIAN AIRBONE TROOPS FLORA (VDV) (Vozdushno-desantnye voyska)  //
 //                        30        BWA3 Bundeswehr (Flecktarn)                                          //
 //                        31        BWA3 Bundeswehr (Tropentarn)                                         //
 //                        32        BWA3 Bundeswehr Fernspäher (Flecktarn)                               //
@@ -1046,6 +1047,59 @@ switch (_TypNumber) do
         ];
     };
 
+    //===================================================================================================//
+    // RHS RUSSIAN AIRBONE TROOPS FLORA (VDV) (Vozdushno-desantnye voyska)                               //
+    //===================================================================================================//
+    case 23: {
+        _Unit_Pool_S = [
+            "rhs_vdv_flora_combatcrew","rhs_pilot","rhs_vdv_flora_sergeant",   // Crew, Helicopter Pilot and Squad Leader
+            "rhs_vdv_flora_junior_sergeant",                     // Fireteam Leader
+            "rhs_vdv_flora_rifleman",                            // Rifleman
+            "rhs_vdv_flora_rifleman",                            // Rifleman
+            "rhs_vdv_flora_rifleman",                            // Rifleman
+            "rhs_vdv_flora_rifleman",                            // Rifleman
+            "rhs_vdv_flora_rifleman",                            // Rifleman
+            "rhs_vdv_flora_grenadier",                           // Grenadier
+            "rhs_vdv_flora_grenadier",                           // Grenadier
+            //"rhs_vdv_flora_grenadier_rpg",                       // Grenadier RPG
+            //"rhs_vdv_flora_strelok_rpg_assist",
+            "rhs_vdv_flora_machinegunner",                       // Machinegunner
+            "rhs_vdv_flora_machinegunner",                       // Machinegunner
+            //"rhs_vdv_flora_machinegunner_assistant",             // Assistant Machinegunner
+            "rhs_vdv_flora_LAT",                                 // Rifleman with AT4
+            //"rhs_vdv_flora_at",                                  // Anti-Tank
+            //"rhs_vdv_flora_aa",                                  // Anti-Aircraft
+            "rhs_vdv_flora_rshg2",                               // Explosives
+            "rhs_vdv_flora_engineer",                            // Engineer
+            //"rhs_vdv_flora_efreitor",
+            "rhs_vdv_flora_marksman",                            // Designated Marksman
+            "rhs_vdv_flora_medic"                                // Medic
+        ];
+        _Unit_Pool_V = [
+            //"rhs_tigr_ffv_vdv",
+            "rhs_tigr_sts_vdv"
+            //"rhs_uaz_vdv",
+            //"RHS_Ural_Open_VDV_01"
+        ];
+        _Unit_Pool_T = [
+            "rhs_sprut_vdv",                               // Tank
+            "rhs_bmd1p",
+            "rhs_bmd2m",
+            "rhs_bmd4m_vdv",
+            "rhs_bmd4ma_vdv",
+            "rhs_bmp1p_vdv",
+            "rhs_bmp2k_vdv",
+            "rhs_btr80_vdv",
+            "rhs_btr80a_vdv"
+        ];
+        _Unit_Pool_A = [
+            "RHS_Mi8MTV3_vdv",
+            "RHS_Mi8MTV3_vdv",
+            "RHS_Mi8MTV3_UPK23_vdv",
+            "RHS_Mi24V_UPK23_vdv"
+        ];
+    };
+    
     //===================================================================================================//
     // BW: Bundeswehr (Flecktarn)                                                                        //
     //===================================================================================================//

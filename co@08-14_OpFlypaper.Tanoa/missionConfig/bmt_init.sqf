@@ -8,4 +8,9 @@
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
+if (isServer) then {
+    bmt_airAssets = [bmt_heli1, bmt_heli2, bmt_heli3, bmt_plane1, bmt_plane2, bmt_plane3, bmt_drone1, bmt_drone2];
+    publicVariable "bmt_airAssets";
+};
+
 //============================================= END OF FILE =============================================//

@@ -12,5 +12,5 @@ bmt_var_equipNightVision = 2;    // Global. Equips a unit with night vision goog
                                  //   - 0 = Without night vision googles.
                                  //   - 1 = Night vision googles in backpack.
                                  //   - 2 = Equiped night vision googles (divers will have them in backpack).
-bmt_var_equipFlashlight = false; // Global. Equips a unit with a flashlight if ACE3 is used.
+bmt_var_equipFlashlight = true; // Global. Equips a unit with a flashlight if ACE3 is used.
 //============================================= END OF FILE =============================================//

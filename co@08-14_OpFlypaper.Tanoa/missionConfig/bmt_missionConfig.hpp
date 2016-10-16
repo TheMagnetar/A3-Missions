@@ -19,18 +19,18 @@ class Header {
 };
 
 class bmt_config {
-    bmt_config_testedAddons = "*** List of addons with the corresponding tested version number. ***<br/>*** Each addon must have its own line. ***";
-    bmt_config_templateVersion = "v1.0 (2016-05-14).";
-    bmt_config_missionVersion = "vX.Y (date).";
-    bmt_config_missionCollaborators = "TheMagnetar (BMT) and *** Possible collaborators ***.";
-    bmt_config_missionDifficulty = "*** Expected mission difficulty. ***";
-    bmt_config_missionSummary = "*** Mission summary for administrators. ***";
-    bmt_config_missionNotesAndRemarks = "*** Additional notes and remarks from the mission author. ***";
+    bmt_config_testedAddons = "- Advanced Combat Environment (ACE 3) v3.8.0.<br/>- Advanced Combat Radio Environment (ACRE 2) v2.2.0.<br/>- Advanced Light Infantry Virtual Environment (ALiVE) v1.2.0. Required.<br/>- Community Base Addons (CBA) v3.1.0. Required.<br/>- Dynamic-AI-Creator (DAC) v3.1b addon version. Required.<br/>- RHS United States Armed Forces (RHS USAF) v0.4.1.1. Required.<br/>- RHS Armed Forces of the Russian Federation (RHS AFRF) v0.4.1.1. Required.- Task Force Arrowhead Radio (TFAR) v0.9.12.";
+    bmt_config_templateVersion = "v1.0 (2016-05-14)";
+    bmt_config_missionVersion = "v1.0 (2016.10.15)";
+    bmt_config_missionCollaborators = "-";
+    bmt_config_missionDifficulty = "High";
+    bmt_config_missionSummary = """Operation Flypaper"" is a mission in Tanoa in which the players have to sabotage the enemy airbase. The airbase does not have static defenses and only infantry patrols and one wheeled vehicle are present. The players are inserted using HALO";
+    bmt_config_missionNotesAndRemarks = "Tasks are not updated once they are completed and it is up to the players to decide if it has been completed or not. Patrols and enemy units are totally random";
 
 
     bmt_config_jipAllowedTime = 300;   // JIP players are enabled until the specified time (in seconds). To
                                        // enable always JIP players set to -1.
-    bmt_config_numAllowedRespawns = -99; // Number of allowed respawns. Set to -1 to have unlimited respawns,
+    bmt_config_numAllowedRespawns = 0; // Number of allowed respawns. Set to -1 to have unlimited respawns,
                                        // 0 to disable respawn and a positive number to limit the number of
                                        // respawns.
 };
@@ -39,15 +39,15 @@ class bmt_config {
 // Loading screen: https://community.bistudio.com/wiki/Description.ext                                   //
 //=======================================================================================================//
 
-onLoadName = "*** Mission name. ***";            // Mission name.
-onLoadMission = "*** Mission description. ***";  // Brief mission description.
+onLoadName = "Operation Flypaper";            // Mission name.
+onLoadMission = "Sabotage the air base.";  // Brief mission description.
 onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)";  // Message shown while loading introduction.
 onLoadIntroTime = 0;                             // Show (1) or hide (0) date and time on when loading introduction.
 onLoadMissionTime = 0;                           // Show (1) or hide (0) date and time on when loading mission.
-author = "*** Author(s). ***";                   // Author.
-loadScreen = "images\loadScreen.jpg";            // Image displayed when loading mission.
+author = "TheMagnetar";                   // Author.
+loadScreen = "images\loadScreen.jpg";            // Image displayed when loading mission
 overviewPicture = "images\overviewPicture.jpg";  // Imatge displayed when selecting mission (aspect 2:1).
-overviewText = "*** Text to show. ***";          // Text shown when selecting mission.
+overviewText = "Russian presence on Tanoa is reaching highly threating levels. Fortunately, their bases of operations are still in construction, which opens a window for sabotaging their must important assets. A small group of marines are deployed in Tanoa with the task of sabotaging their newest air base. Stealth is essencial: despite the base lacking static defenses, there is a strong presence of enemy patrols.";          // Text shown when selecting mission.
 
 //=======================================================================================================//
 // Respawn Settings: https://community.bistudio.com/wiki/Arma_3_Respawn                                  //

@@ -136,12 +136,12 @@ switch (_unitFaction) do {
 
     // RHS: USAF "United States Marine Corps" (WD) faction.
     case "rhs_faction_usmc_wd": {
-        _missionLocation = "Location"; _uavMarker = "marker"; _uavMarkerType = [];
+        _missionLocation = "Tanoa"; _uavMarker = "marker"; _uavMarkerType = [];
     };
 
     // RHS: USAF "United States Navy" faction.
     case "rhs_faction_usn": {
-        _missionLocation = "Location"; _uavMarker = "marker"; _uavMarkerType = [];
+        _missionLocation = "Tanoa"; _uavMarker = "marker"; _uavMarkerType = [];
     };
 
     // RHS: Insurgents faction.

@@ -263,7 +263,7 @@ _pistol = "rhsusf_weap_m1911a1";
 
 // Objects.
 _gps = "ItemGPS";
-_watch = "ItemWatch";
+_watch = "ACE_Altimeter";
 _map = "ItemMap";
 _compass = "ItemCompass";
 _radio = "ItemRadio";
@@ -273,7 +273,7 @@ _uavTerminal = "B_UavTerminal";
 _binoculars = "lerca_1200_tan";
 
 // Night vision.
-_nightVision = "rhsusf_ANPVS_14";
+_nightVision = "rhsusf_ANPVS_15";
 
 if (bmt_mod_ace3) then {
     //===================================================================================================//
@@ -392,7 +392,7 @@ switch (_unitRole) do
     case "pl": {
         // Vest and Backpack.
         _unit addVest _vestSL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -408,21 +408,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",2];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",2];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
         // Primary weapon
         _unit addWeapon _pweapon320;
@@ -454,7 +439,7 @@ switch (_unitRole) do
     case "psg": {
         // Vest and Backpack.
         _unit addVest _vestSL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -470,21 +455,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",2];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",2];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
         // Primary weapon
         _unit addWeapon _pweapon320;
@@ -516,7 +486,7 @@ switch (_unitRole) do
     case "rto": {
         // Vest and Backpack.
         _unit addVest _vestSL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -535,21 +505,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",2];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",2];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -571,7 +526,7 @@ switch (_unitRole) do
     case "fo": {
         // Vest and Backpack.
         _unit addVest _vestSL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -590,21 +545,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",2];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",2];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -629,7 +569,7 @@ switch (_unitRole) do
         case "jtac": {
             // Vest and Backpack.
             _unit addVest _vestSL;
-            _unit addBackpack _backpack;
+            _unit addBackpack _parachuteHPLT;
 
             // Items in the uniform.
             (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -649,17 +589,6 @@ switch (_unitRole) do
             (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
             (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
             (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",2];
-
-            // Items in the backpack.
-            if (bmt_mod_ace3 or bmt_mod_agm) then {
-                (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-                if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                    (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                    (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                    (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                    (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-                };
-            };
 
             // Primary weapon
             _unit addWeapon _pweapon;
@@ -684,7 +613,7 @@ switch (_unitRole) do
     case "me": {
         // Vest and Backpack.
         _unit addVest _vestME;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -699,29 +628,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",3];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_morphine,8];
-            (unitBackpack _unit) addItemCargoGlobal [_epinephrine,8];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_bandage,10];
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,10];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,10];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,8];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,5];
-                (unitBackpack _unit) addItemCargoGlobal [_atropine,8];
-                (unitBackpack _unit) addItemCargoGlobal [_surgicalKit,2];
-                (unitBackpack _unit) addItemCargoGlobal [_personalAidKid,2];
-                (unitBackpack _unit) addItemCargoGlobal [_salineBag500,6];
-            };
-
-            if( bmt_mod_agm or (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 1))) then {
-                (unitBackpack _unit) addItemCargoGlobal [_bandage,20];
-                (unitBackpack _unit) addItemCargoGlobal [_bloodBag500,2];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",2];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -743,7 +649,7 @@ switch (_unitRole) do
     case "sl": {
         // Vest and Backpack.
         _unit addVest _vestSL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -759,21 +665,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",2];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",2];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
         // Primary weapon
         _unit addWeapon _pweapon320;
@@ -806,7 +697,7 @@ switch (_unitRole) do
     case "tl": {
         // Vest and Backpack.
         _unit addVest _vestTL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -822,21 +713,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",2];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",2];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
         // Primary weapon
         _unit addWeapon _pweapon320;
@@ -861,7 +737,7 @@ switch (_unitRole) do
     case "rfl": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -874,21 +750,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
         // Night vision.
         if ((bmt_var_equipNightVision == 1) or (bmt_var_equipNightVision == 2)) then {
@@ -910,7 +771,7 @@ switch (_unitRole) do
     case "rflat": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -924,21 +785,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
 
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",2];
-        (unitBackpack _unit) addItemCargoGlobal ["rhs_m136_hedp_mag",1];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -963,7 +809,7 @@ switch (_unitRole) do
     case "rfluav": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _uavBackpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -976,22 +822,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",2];
-        (unitBackpack _unit) addItemCargoGlobal ["rhs_m136_hedp_mag",1];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1016,7 +846,7 @@ switch (_unitRole) do
     case "gr": {
         // Vest and Backpack.
         _unit addVest _vestGR;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -1031,23 +861,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",6];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_m714_White",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_M433_HEDP",5];
 
         // Primary weapon
         _unit addWeapon _pweapon320;
@@ -1069,7 +882,7 @@ switch (_unitRole) do
     case "ar": {
         // Vest and Backpack.
         _unit addVest _vestAR;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",2];
@@ -1080,20 +893,6 @@ switch (_unitRole) do
         };
         (vestContainer _unit) addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",3];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",3];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
 
         // Primary weapon
         _unit addWeapon _pweaponAR;
@@ -1114,7 +913,7 @@ switch (_unitRole) do
     case "aar": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -1127,20 +926,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",2];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1165,7 +950,7 @@ switch (_unitRole) do
     case "dm": {
         // Vest and Backpack.
         _unit addVest _vestDM;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",1];
@@ -1180,20 +965,6 @@ switch (_unitRole) do
         };
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",3];
         (vestContainer _unit) addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",6];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag",5];
 
         // Primary weapon
         // Missing muzzle attachment
@@ -1217,7 +988,7 @@ switch (_unitRole) do
     case "mg": {
         // Vest and Backpack.
         _unit addVest _vestMG;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",1];
@@ -1228,20 +999,6 @@ switch (_unitRole) do
         };
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",3];
         (vestContainer _unit) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
 
         // Night vision.
         if ((bmt_var_equipNightVision == 1) or (bmt_var_equipNightVision == 2)) then {
@@ -1261,7 +1018,7 @@ switch (_unitRole) do
     case "amg": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -1274,20 +1031,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhsusf_100Rnd_762x51",2];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1312,7 +1055,7 @@ switch (_unitRole) do
     case "at": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -1325,22 +1068,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_fgm148_magazine_AT",1];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1365,7 +1092,7 @@ switch (_unitRole) do
     case "aat": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -1378,18 +1105,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_fgm148_magazine_AT",1];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1411,7 +1126,7 @@ switch (_unitRole) do
     case "aa": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -1424,22 +1139,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_fim92_mag",1];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1464,7 +1163,7 @@ switch (_unitRole) do
     case "aaa": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -1477,18 +1176,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_fim92_mag",1];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1510,7 +1197,7 @@ switch (_unitRole) do
     case "en": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
@@ -1526,20 +1213,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67",4];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84", 1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 4];
-        (unitBackpack _unit) addItemCargoGlobal ["ToolKit", 1];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1561,7 +1234,7 @@ switch (_unitRole) do
     case "exp": {
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer, 1];
@@ -1577,22 +1250,6 @@ switch (_unitRole) do
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 8];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 1];
         (vestContainer _unit) addMagazineCargoGlobal ["rhs_mag_m67", 2];
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage, 2];
-            (unitBackpack _unit) addItemCargoGlobal [_defusalKit, 1];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage, 3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot, 3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage, 3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet, 1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84", 1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 4];
-        (unitBackpack _unit) addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 3];
-        (unitBackpack _unit) addMagazineCargoGlobal ["SLAMDirectionalMine_Wire_Mag", 1];
 
         // Primary weapon
         _unit addWeapon _pweapon;
@@ -1616,7 +1273,7 @@ switch (_unitRole) do
         removeUniform _unit;
         _unit forceAddUniform _uniformSN;
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Helmet.
         removeHeadgear _unit;
@@ -1647,20 +1304,6 @@ switch (_unitRole) do
         };
         (vestContainer _unit) addMagazineCargoGlobal ["rhsusf_5Rnd_300winmag_xm2010",5];
 
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",1];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhsusf_5Rnd_300winmag_xm2010",5];
-
         // Primary weapon
         _unit addWeapon _pweaponSN;
         _unit addPrimaryWeaponItem _pweaponLaserLanternSN;
@@ -1683,7 +1326,7 @@ switch (_unitRole) do
         removeUniform _unit;
         _unit forceAddUniform _uniformSN;
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Helmet.
         removeHeadgear _unit;
@@ -1712,21 +1355,6 @@ switch (_unitRole) do
             (vestContainer _unit) addItemCargoGlobal [_mapTools,1];
             (vestContainer _unit) addItemCargoGlobal [_kestrel,1];
         };
-
-        // Items in the backpack.
-        if (bmt_mod_ace3 or bmt_mod_agm) then {
-            (unitBackpack _unit) addItemCargoGlobal [_bandage,2];
-            if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
-                (unitBackpack _unit) addItemCargoGlobal [_elasticBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_quickClot,3];
-                (unitBackpack _unit) addItemCargoGlobal [_packingBandage,3];
-                (unitBackpack _unit) addItemCargoGlobal [_tourniquet,1];
-            };
-        };
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag",5];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_mk84",2];
-        (unitBackpack _unit) addMagazineCargoGlobal ["rhs_mag_an_m8hc",2];
 
         _unit addWeapon _pweapon;
         _unit addPrimaryWeaponItem _pweaponSurefire;
@@ -2061,7 +1689,7 @@ switch (_unitRole) do
     case "ccrw": {
         // Vest and Backpack.
         _unit addVest _vestCRW;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Helmet.
         removeHeadgear _unit;
@@ -2182,12 +1810,85 @@ switch (_unitRole) do
         };
     };
 
+    case "ammobox": {
+        clearWeaponCargoGlobal _unit;
+        clearMagazineCargoGlobal _unit;
+        clearItemCargoGlobal _unit;
+        clearBackpackCargoGlobal _unit;
+
+        // AT equipment
+        _unit addItemCargoGlobal ["rhs_m136_hedp_mag", 1];
+        _unit addWeaponCargoGlobal [_pweaponLauncherRF, 1];
+        _unit addItemCargoGlobal ["rhsusf_acc_premier_anpvs27", 1];
+
+        // Sights
+        _unit addItemCargoGlobal ["rhsusf_acc_eotech_552", 11];
+        _unit addBackpackCargoGlobal [_backpack, 5];
+
+        {
+            switch (_forEachIndex) do {
+
+                // Explosives backpack
+                case 0: {
+                    if (bmt_ace3_mod or bmt_agm_mod) then {
+                        _x addItemCargoGlobal [_defusalKit, 1];
+                    };
+                    _x addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 3];
+                    _x addMagazineCargoGlobal ["SLAMDirectionalMine_Wire_Mag", 1];
+                };
+
+                // Explosives backpack
+                case 1: {
+                    if (bmt_ace3_mod or bmt_agm_mod) then {
+                        _x addItemCargoGlobal [_defusalKit, 1];
+                    };
+                    _x addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 3];
+                    _x addMagazineCargoGlobal ["SLAMDirectionalMine_Wire_Mag", 1];
+                };
+
+                // Machine gunner
+                case 2: {
+                    _x addMagazineCargoGlobal ["rhsusf_100Rnd_762x51", 2];
+                };
+
+                // Automatic rifleman
+                case 3: {
+                    _x addMagazineCargoGlobal ["rhsusf_200Rnd_556x45_soft_pouch",1];
+                };
+
+                // Medic
+                case 4: {
+                    if (bmt_mod_ace3 or bmt_mod_agm) then {
+                        _x addItemCargoGlobal [_morphine,10];
+                        _x addItemCargoGlobal [_epinephrine,10];
+                        if (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 2)) then {
+                            _x addItemCargoGlobal [_bandage,15];
+                            _x addItemCargoGlobal [_elasticBandage,15];
+                            _x addItemCargoGlobal [_quickClot,15];
+                            _x addItemCargoGlobal [_packingBandage,8];
+                            _x addItemCargoGlobal [_tourniquet,2];
+                            _x addItemCargoGlobal [_atropine,10];
+                            _x addItemCargoGlobal [_salineBag500,6];
+                        };
+
+                        if( bmt_mod_agm or (bmt_mod_ace3 and (bmt_param_ace3_medicalSystem == 1))) then {
+                            _x addItemCargoGlobal [_bandage,20];
+                            _x addItemCargoGlobal [_bloodBag500,2];
+                        };
+                    };
+                };
+            };
+        } foreach everyBackpack _unit;
+
+        _unit addBackpackCargoGlobal [_uavBackpack, 1];
+    };
+
     default {
         _unit sideChat format ["DEBUG (bmt_configEquipment_rhs_usaf.sqf): unit role %1 is not defined. Defaulting to rifleman.", _unitRole];
 
         // Vest and Backpack.
         _unit addVest _vestRFL;
-        _unit addBackpack _backpack;
+        _unit addBackpack _parachuteHPLT;
 
         // Items in the uniform.
         (uniformContainer _unit) addItemCargoGlobal [_pweaponSilencer,1];
