@@ -17,7 +17,7 @@
 #ifdef BMT_FUNCTIONS_INTERNAL
     class configEquipment {
         file = "src\configEquipment\functions";
-        class configEquipment {};
+        class configEquipment { };
     };
 #endif
 

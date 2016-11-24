@@ -5,12 +5,17 @@
 // File creation: 2015/02/22                                                                             //
 // Description: This document provides additional information to the administrator. Since only the       //
 //              administrator can view this additional remarks, advices and notes can be given.          //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
-private ["_briefingAdmin", "_briefingNotes", "_briefingEndings"];
+private ["_briefingAdmin", "_briefingNotes", "_briefingEndings", "_briefingJip"];
 private ["_respawnDescription", "_respawnType", "_respawnTickets"];
 private ["_debriefingEntries", "_endingEntry", "_endingTitle", "_endingDescription"];
+private
 
 //=======================================================================================================//
 // MESSAGES ONLY SHOWN TO THE ADMINISTRATOR.                                                             //
@@ -116,7 +121,22 @@ for [{ _x = 0 }, {_x < count _debriefingEntries}, { _x = _x + 1}] do {
     ];
 };
 
-_briefing = _briefingAdmin + _briefingNotes + _briefingEndings;
+//=======================================================================================================//
+// NOTES: JIP Control.                                                                                   //
+//=======================================================================================================//
+
+_briefingJip = "
+<br/>
+<font color='#FF0000' size='18'>JIP control:</font>
+<br/>
+- <execute expression=""bmt_var_jipAllowedTime = bmt_var_jipAllowedTime + 300;  publicVariable 'bmt_var_jipAllowedTime'; hint format ['Time until JIP is disabled: %1', bmt_var_jipAllowedTime];"">Increase JIP allowed time by 5 minutes</execute>.
+<br/>
+- <execute expression=""missionNamespace setVariable ['bmt_var_jip_allowed', true, true]; hint 'JIP is enabled';"">Enable JIP</execute>.
+<br/>
+- <execute expression=""missionNamespace setVariable ['bmt_var_jip_allowed', false, true]; hint 'JIP is disabled';"">Disable JIP</execute>.
+";
+
+_briefing = _briefingAdmin + _briefingNotes + _briefingEndings + _briefingJIP;
 
 //=======================================================================================================//
 // DIARY ENTRY CREATION.                                                                                 //

@@ -6,6 +6,10 @@
 // Description: This document defines under which circumstances any of the defined endings in the file   //
 //              bmt_missionDebriefing.hpp is activated. It has to be ensured that this fucntion is       //
 //              executed with global scope so that it affects both clients and servers.                  //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

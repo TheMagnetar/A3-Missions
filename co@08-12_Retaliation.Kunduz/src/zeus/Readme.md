@@ -1,4 +1,4 @@
-## scripts/zeus
+## /src/zeus
 
 En aquesta carpeta es troben els fitxers que serveixen per afegir al Zeus les unitats que s'han posat mitjançant l'editor,
 els jugadors i les unitats posades durant la partida per altres Zeus. Consta de quatre fitxers, que no són necessàris que

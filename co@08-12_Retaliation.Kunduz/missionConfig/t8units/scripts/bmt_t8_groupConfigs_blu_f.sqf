@@ -7,6 +7,9 @@
 //              BLUFOR faction. Originally based on SavageCDN's configuration files:                     //
 //              https://github.com/SavageCDN/T8Units_Group_Configs                                       //
 //                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 //              Defined group configurations:                                                            //
 //                    Group                             Array name                                       //
 //                    Air-defense Team (Infantry)        _groupArray_BLU_F_BUS_InfTeam_AA                //

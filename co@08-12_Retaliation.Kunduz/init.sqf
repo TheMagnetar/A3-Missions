@@ -8,10 +8,9 @@
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
-// Once the preload is finished execute the following.
-onPreloadFinished {
-    endLoadingScreen;
-    bmt_preload_completed = true;
+// BMT components are not loaded
+if (hasInterface) then {
+    missionNamespace setVariable ["bmt_var_init_preloadCompleted", false, false];
 };
 
 //=======================================================================================================//
@@ -46,14 +45,18 @@ if ((bmt_param_useVAProfiles == 1) && hasInterface) then {
 
 // Wait until player is initalised in order to execute the rest of the script.
 if (!isDedicated && (isNull player)) then {
-    waitUntil {sleep 0.1; !isNull player};
+    waitUntil {sleep 0.1; !isNull player && player == player && time > 1};
 };
 
 //=======================================================================================================//
 // JIP supprt.                                                                                           //
 //=======================================================================================================//
 if (bmt_param_jip_enabled == 1) then {
-    #include "src\jip\scripts\bmt_jip_init.sqf"
+    bmt_script_jip = [] execVM "src\jip\scripts\bmt_jip_init.sqf";
+    if (hasInterface) then {
+        waitUntil { scriptDone bmt_script_jip };
+    };
+
 };
 
 //=======================================================================================================//
@@ -64,12 +67,19 @@ if (bmt_param_jip_enabled == 1) then {
 
 // Configure TFAR if it is loaded (see file fn_core_processMods.sqf).
 if (bmt_mod_tfar) then {
-    bmt_script_tfar = [] execVM "src\tfar\scripts\bmt_tfar_init.sqf";
+    bmt_script_radio = [] execVM "src\tfar\scripts\bmt_tfar_init.sqf";
 };
 
 // Configure ACRE 2 if it is loaded (see file fn_core_processMods.sqf).
 if (bmt_mod_acre2) then {
-    bmt_script_acre2 = [] execVM "src\acre2\scripts\bmt_acre2_init.sqf";
+    bmt_script_radio = [] execVM "src\acre2\scripts\bmt_acre2_init.sqf";
+};
+
+if (hasInterface) then {
+    bmt_script_preloadCompleted = [] spawn {
+        waitUntil { player getVariable ["bmt_var_init_configRadiosReady", false] };
+        missionNamespace setVariable ["bmt_var_init_preloadCompleted", true, false];
+    };
 };
 
 //=======================================================================================================//

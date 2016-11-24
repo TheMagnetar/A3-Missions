@@ -18,7 +18,7 @@
 #ifdef BMT_FUNCTIONS_INTERNAL
     class configGroup {
         file = "src\configGroup\functions";
-        class configGroup{};
+        class configGroup { };
     };
 #endif
 

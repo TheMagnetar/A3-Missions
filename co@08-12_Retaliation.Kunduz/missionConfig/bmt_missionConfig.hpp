@@ -18,7 +18,11 @@ class Header {
     playerCountMultipleOf = 1; // Balancing in tvt or pvp game types.
 };
 
+//=======================================================================================================//
+// Mission configuration - Variables to configure different scripts of the template.                     //
+//=======================================================================================================//
 class bmt_config {
+    // Variables affecting the admin briefing.
     bmt_config_testedAddons = "- Advanced Combat Environment 3 (ACE3) v3.5.1.<br/>- Advanced Combat Radio Environment 2 (ACRE2) v2.1.0.<br/>- Advanced Light Infantry Virtual Environment (ALIVE) v1.0.2.<br/>- Community Base Addons (CBA) v2.3.0.<br/>- Dynamic-AI-Creator (DAC) v3.1b (addon version).<br/>- Kunduz, Afghanistan v1.08.<br/>- Leights Opfor Pack (LOP) v1.7.1.<br/>- RHS United States Army Forces (RHS USAF) v0.4.0.2.<br/>- RHS Armed Forces of the Russian Federation (RHS AFRF) v0.4.0.2.<br/>- Task Force Arrowhead Radio (TFAR) v0.9.7.3.";
     bmt_config_templateVersion = "v1.0 (2016-05-14).";
     bmt_config_missionVersion = "v1.0 (2016-01-18).";
@@ -28,25 +32,28 @@ class bmt_config {
     bmt_config_missionNotesAndRemarks = "-.";
 
 
-    bmt_config_jipAllowedTime = 300;   // JIP players are enabled until the specified time (in seconds). To
-                                       // enable always JIP players set to -1.
-    bmt_config_numAllowedRespawns = 0; // Number of allowed respawns. Set to -1 to have unlimited respawns,
-                                       // 0 to disable respawn and a positive number to limit the number of
-                                       // respawns.
+    bmt_config_jipAllowedTime = 300;     // JIP players are enabled until the specified time (in seconds).
+                                         // To enable always JIP players set to -1.
+    bmt_config_numAllowedRespawns = 0;   // Number of allowed respawns. Set to -1 to have unlimited respawns,
+                                         // respawns, 0 to disable respawn and a positive number to limit
+                                         // the number of respawns. As a side note, if ACE3 Revive system
+                                         // is used, a positive number will effectively limit the amount of
+                                         // times a player can be revived by a medic. Nevertheless,
+                                         // activating ACE 3 Revive will disable respawning.
 };
 
 //=======================================================================================================//
 // Loading screen: https://community.bistudio.com/wiki/Description.ext                                   //
 //=======================================================================================================//
 
-onLoadName = "Retaliation";            // Mission name.
-onLoadMission = "Rescue the surviving marines.";  // Brief mission description.
-onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)";  // Message shown while loading introduction.
-onLoadIntroTime = 0;                             // Show (1) or hide (0) date and time on when loading introduction.
-onLoadMissionTime = 0;                           // Show (1) or hide (0) date and time on when loading mission.
-author = "TheMagnetar";                          // Author.
-loadScreen = "images\loadScreen.jpg";            // Image displayed when loading mission.
-overviewPicture = "images\overviewPicture.jpg";  // Imatge displayed when selecting mission (aspect 2:1).
+onLoadName = "Retaliation";                               // Mission name.
+onLoadMission = "Rescue the surviving marines.";          // Brief mission description.
+onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)"; // Message shown while loading introduction.
+onLoadIntroTime = 0;                                      // Show (1) or hide (0) date and time on when loading introduction.
+onLoadMissionTime = 0;                                    // Show (1) or hide (0) date and time on when loading mission.
+author = "TheMagnetar";                                   // Author.
+loadScreen = "images\loadScreen.jpg";                     // Image displayed when loading mission.
+overviewPicture = "images\overviewPicture.jpg";           // Imatge displayed when selecting mission (aspect 2:1).
 overviewText = "After the attack of troops heading home, allied forces have decided to increase the intensity of the operations in Kunduz in order to deliver a clear message to the insurgent forces: all attacks will be answered in kind! The main objective is to rescue the few surviving marines and eliminate any evidence of leaked information obtained through torture.";          // Text shown when selecting mission.
 
 //=======================================================================================================//

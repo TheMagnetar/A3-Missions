@@ -5,6 +5,10 @@
 // File creation: 2016/08/25                                                                             //
 // Description: This function configures the T8 units variables as per version 0.70 depending on mission //
 //              parameters. It is called in externalScripts/T8/fnc/fn_INIT.sqf.                          //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

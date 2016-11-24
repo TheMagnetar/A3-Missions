@@ -18,12 +18,12 @@
 #ifdef BMT_FUNCTIONS_INTERNAL
     class tfar {
         file = "src\tfar\functions";
-        class tfar_addRadios{};
-        class tfar_configureChannels{};
-        class tfar_configureFrequencies{};
-        class tfar_configureStereo{};
-        class tfar_modifySignal{};
-        class tfar_removeRadios{};
+        class tfar_addRadios            { };
+        class tfar_configureChannels    { };
+        class tfar_configureFrequencies { };
+        class tfar_configureStereo      { };
+        class tfar_modifySignal         { };
+        class tfar_removeRadios         { };
     };
 #endif
 
