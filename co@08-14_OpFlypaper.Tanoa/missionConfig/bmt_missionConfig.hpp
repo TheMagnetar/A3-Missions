@@ -18,7 +18,11 @@ class Header {
     playerCountMultipleOf = 1; // Balancing in tvt or pvp game types.
 };
 
+//=======================================================================================================//
+// Mission configuration - Variables to configure different scripts of the template.                     //
+//=======================================================================================================//
 class bmt_config {
+    // Variables affecting the admin briefing.
     bmt_config_testedAddons = "- Advanced Combat Environment (ACE 3) v3.8.0.<br/>- Advanced Combat Radio Environment (ACRE 2) v2.2.0.<br/>- Advanced Light Infantry Virtual Environment (ALiVE) v1.2.0. Required.<br/>- Community Base Addons (CBA) v3.1.0. Required.<br/>- Dynamic-AI-Creator (DAC) v3.1b addon version. Required.<br/>- RHS United States Armed Forces (RHS USAF) v0.4.1.1. Required.<br/>- RHS Armed Forces of the Russian Federation (RHS AFRF) v0.4.1.1. Required.- Task Force Arrowhead Radio (TFAR) v0.9.12.";
     bmt_config_templateVersion = "v1.0 (2016-05-14)";
     bmt_config_missionVersion = "v1.0 (2016.10.15)";
@@ -28,25 +32,28 @@ class bmt_config {
     bmt_config_missionNotesAndRemarks = "Tasks are not updated once they are completed and it is up to the players to decide if it has been completed or not. Patrols and enemy units are totally random";
 
 
-    bmt_config_jipAllowedTime = 300;   // JIP players are enabled until the specified time (in seconds). To
-                                       // enable always JIP players set to -1.
-    bmt_config_numAllowedRespawns = 0; // Number of allowed respawns. Set to -1 to have unlimited respawns,
-                                       // 0 to disable respawn and a positive number to limit the number of
-                                       // respawns.
+    bmt_config_jipAllowedTime = 300;     // JIP players are enabled until the specified time (in seconds).
+                                         // To enable always JIP players set to -1.
+    bmt_config_numAllowedRespawns = -99; // Number of allowed respawns. Set to -99 to have unlimited
+                                         // respawns, 0 to disable respawn and a positive number to limit
+                                         // the number of respawns. As a side note, if ACE3 Revive system
+                                         // is used, a positive number will effectively limit the amount of
+                                         // times a player can be revived by a medic. Nevertheless,
+                                         // activating ACE 3 Revive will disable respawning.
 };
 
 //=======================================================================================================//
 // Loading screen: https://community.bistudio.com/wiki/Description.ext                                   //
 //=======================================================================================================//
 
-onLoadName = "Operation Flypaper";            // Mission name.
-onLoadMission = "Sabotage the air base.";  // Brief mission description.
-onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)";  // Message shown while loading introduction.
-onLoadIntroTime = 0;                             // Show (1) or hide (0) date and time on when loading introduction.
-onLoadMissionTime = 0;                           // Show (1) or hide (0) date and time on when loading mission.
-author = "TheMagnetar";                   // Author.
-loadScreen = "images\loadScreen.jpg";            // Image displayed when loading mission
-overviewPicture = "images\overviewPicture.jpg";  // Imatge displayed when selecting mission (aspect 2:1).
+onLoadName = "Operation Flypaper";                        // Mission name.
+onLoadMission = "Sabotage the air base.";                 // Brief mission description.
+onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)"; // Message shown while loading introduction.
+onLoadIntroTime = 0;                                      // Show (1) or hide (0) date and time on when loading introduction.
+onLoadMissionTime = 0;                                    // Show (1) or hide (0) date and time on when loading mission.
+author = "TheMagnetar";                                   // Author.
+loadScreen = "images\loadScreen.jpg";                     // Image displayed when loading mission
+overviewPicture = "images\overviewPicture.jpg";           // Imatge displayed when selecting mission (aspect 2:1).
 overviewText = "Russian presence on Tanoa is reaching highly threating levels. Fortunately, their bases of operations are still in construction, which opens a window for sabotaging their must important assets. A small group of marines are deployed in Tanoa with the task of sabotaging their newest air base. Stealth is essencial: despite the base lacking static defenses, there is a strong presence of enemy patrols.";          // Text shown when selecting mission.
 
 //=======================================================================================================//

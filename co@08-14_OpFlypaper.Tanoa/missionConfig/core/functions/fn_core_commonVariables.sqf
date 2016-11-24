@@ -3,7 +3,12 @@
 // Author: TheMagnetar                                                                                   //
 // Version: 1.0                                                                                          //
 // File creation: 2015/04/01                                                                             //
-// Description: This document declares common variables.                                                 //
+// Description: This document declares common variables used in the Arma 3 Basic Mission Template        //
+//              (A3-BMT) scripts and functions         .                                                 //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
@@ -62,8 +67,8 @@ bmt_array_longRangeRadio = ["rto", "fo", "jtac"];
 
 bmt_array_groups = [
     ["Alpha 1", "Alpha 1-1", "Alpha 1-2", "Alpha 1-3"],
-    ["Bravo", "Bravo 1", "Bravo 2", "Bravo 3"],
-    ["Charlie", "Charlie 1", "Charlie 2", "Charlie  3"],
+    ["Alpha 2", "Alpha 2-1", "Alpha 2-2", "Alpha 2-3"],
+    ["Alpha 3", "Alpha 3-1", "Alpha 3-2", "Alpha 3-3"],
     ["Command"],
     ["Support"],
     ["Artillery"]

@@ -5,6 +5,10 @@
 // File creation: 2015/02/22                                                                             //
 // Description: This document generates the mission briefing for units belonging to the OPFOR faction    //
 //              (opf_f).                                                                                 //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 0.1 (2015/02/22) Initial version.                                                            //
 //         1.0 (2015/11/26) First public version.                                                        //
 //=======================================================================================================//

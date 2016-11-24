@@ -8,6 +8,10 @@
 //               - http://www.armaholic.com/page.php?id=24080                                            //
 //               - https://github.com/robalo/mods/tree/master/asr_ai3                                    //
 //               - https://forums.bistudio.com/topic/163742-asr-ai-3/                                    //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

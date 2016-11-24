@@ -6,8 +6,10 @@
 // Description: This function configures the different teleport points available in a mission. The       //
 //              variables bmt_var_teleportPoints_Start and bmt_var_teleportPoints_Destination are        //
 //              defined in the file "misionConfig/core/fn_core_commonVariables.sqf".                     //
+//                                                                                                       //
 //              Arguments:                                                                               //
-//               - None.                                                                                 //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

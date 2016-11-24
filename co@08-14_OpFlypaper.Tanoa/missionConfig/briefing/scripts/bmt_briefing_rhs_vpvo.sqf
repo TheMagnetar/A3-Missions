@@ -6,6 +6,10 @@
 // Description: This document generates the mission briefing for units belonging to the RHS faction      //
 //              Soviet Air Defense Forces (Voyska protivovozdushnoy oborony)                             //
 //              http://class.rhsmods.org/rhsafrf/CfgFactionClasses_rhs_faction_vpvo.html                 //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

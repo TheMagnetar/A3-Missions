@@ -18,9 +18,10 @@
 #ifdef BMT_FUNCTIONS_INTERNAL
     class misc {
         file = "src\misc\functions";
-        class misc_checkEmptyPosition {};
-        class misc_teleport{};
+        class misc_checkEmptyPosition       { };
+        class misc_teleport                 { };
         class misc_teleport_configurePoints { postInit = 1; };
+        class misc_teleport_toFriendly      { };
     };
 #endif
 

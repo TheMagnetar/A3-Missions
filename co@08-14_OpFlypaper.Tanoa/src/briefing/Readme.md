@@ -1,4 +1,4 @@
-## scripts/briefing
+## /src/briefing
 
 En aquesta carpeta es troben els diferents fitxers per escriure el briefing a les diverses faccions suportades a la Plantilla Bàsica per Missions (PBM) i un especial per l'administrador. Cadascun dels fitxers de té la següent estructura a excepció de `bmt_briefing_admin.sqf`. Cal destacar que els apartats apareixen en ordre invers a Arma 3: la secció que primer s'introdueix apareix en última posició al llistat.
 
@@ -16,12 +16,12 @@ Aquest apartat només apareix al jugador que estigui com a administrador del ser
   * **Nombre màxim de jugadors**: yy.
   * **Respawn**: Tipus de respawn a la missió (ocell, a base, deshabilitat, ...)
   * **Dificultat**: Dificultat de la missió segons l'autor.
-  * **Resum de la missió: Breu resum de la missió.
+  * **Resum de la missió**: Breu resum de la missió.
 * *Diferents finals de la missió*: Aquesta secció permet a l'administrador acabar la missió de la forma que es desitgi. Seleccionar una de les entrades farà que la missió finalitzi de forma Automatica.
 
 #### Crèdits
 
-En aquesta secció s'han de mencionar de forma obligatòria totes aquelles persones que han col·laborat d'alguna forma a la creació de la missió. 
+En aquesta secció s'han de mencionar de forma obligatòria totes aquelles persones que han col·laborat d'alguna forma a la creació de la missió.
 
 #### Radio
 
@@ -58,6 +58,6 @@ En aquesta secció s'haurà d'explicar en línies generals de què va la missió
 
 La secció d'intel·legència ha de donar informació, en cas d'haver-n'hi, sobre les tropes enemigues i aliades a la zona.
 
-#### Situació
+#### SITREP
 
 L'apartat d'informe de situació, SITREP (Situational Report en anglès), ha de donar una visió general de perquè es fa la missió. Aquesta secció pot ser més elaborada i cobrir aspectes que no siguin rellevants per la missió. Tot i que per missions úniques i sense continuació, al contrari que en campanyes, aquest apartat pot resultar poc útil.

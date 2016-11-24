@@ -8,6 +8,10 @@
 //              automatically initialises the variable "DAC_STRPlayers" with the playable units' names   //
 //              in order to avoid having to introduce them in the file "DAC_Config_Creator.sqf". This is //
 //              a LEGACY script and it is recommended to use the addon version of DAC.                   //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

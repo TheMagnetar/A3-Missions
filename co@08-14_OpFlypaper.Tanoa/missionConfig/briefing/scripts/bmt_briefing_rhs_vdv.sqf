@@ -6,6 +6,10 @@
 // Description: This document generates the mission briefing for units belonging to the RHS faction      //
 //              Russian Airborne Troops (Vozdushno-desantnye voyska)                                     //
 //              http://class.rhsmods.org/rhsafrf/CfgFactionClasses_rhs_faction_vdv.html                  //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

@@ -19,7 +19,7 @@
     class comu {
         file = "src\core\functions";
         class core_checkConfiguration { postInit = 1; };
-        class core_initBMTParams     { };
+        class core_initBMTParams      { };
         class core_processParamsArray { preInit = 1;  };
         class core_processMods        { preInit = 1;  };
     };

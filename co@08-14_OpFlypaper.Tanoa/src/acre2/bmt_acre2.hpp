@@ -18,11 +18,11 @@
 #ifdef BMT_FUNCTIONS_INTERNAL
     class acre2 {
         file = "src\acre2\functions";
-        class acre2_addRadios{};
-        class acre2_configureChannels{};
-        class acre2_configureLanguages{};
-        class acre2_configurePresets{};
-        class acre2_removeRadios{};
+        class acre2_addRadios          { };
+        class acre2_configureChannels  { };
+        class acre2_configureLanguages { };
+        class acre2_configurePresets   { };
+        class acre2_removeRadios       { };
     };
 #endif
 

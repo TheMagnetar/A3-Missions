@@ -5,6 +5,10 @@
 // File creation: 2015/02/22                                                                             //
 // Description: This document generates the mission briefing for units belonging to the Gendarmerie      //
 //              faction (blu_gen_f). Requires APEX.                                                      //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

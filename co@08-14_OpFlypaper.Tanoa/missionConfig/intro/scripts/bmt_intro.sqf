@@ -8,25 +8,41 @@
 //                                                                                                       //
 //              Note: the _uavMarkerType variable is the sixth parameter of the function                 //
 //              BIS_fnc_establishingShot (https://community.bistudio.com/wiki/BIS_fnc_establishingShot). //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
-if (!hasInterface) exitWith {};
+if (!hasInterface || !alive player) exitWith {};
 
 private ["_unitFaction", "_quotes", "_recognised"];
 private ["_missionName", "_missionLocation", "_introText", "_introType"];
+private ["_vehicleName", "_animationList"];
 private ["_uavMarker", "_uavMarkerType", "_uavMarkerColor"];
 
 // Wait until the variable that activates/deactivates debug output is initialised.
 waitUntil {!isNil "bmt_param_debugOutput"};
+waitUntil {time > 0};
 
-// Type of introduction: "blackScreen", "uavFeed"
-_introType = "blackScreen";
+// Type of introduction: "blackScreen", "uavFeed" and "playerCamera"
+_introType = "playerCamera";
 
-_quotes = ["Whoever said the pen is mightier than the sword obviously never encountered automatic weapons.\nDouglas MacArthur."];
+_quotes = [
+    "Whoever said the pen is mightier than the sword obviously never encountered automatic weapons.\nDouglas MacArthur.",
+    "Soldiers Live. And wonder why.\nGlen Cook.",
+    "People sleep peaceably in their beds at night only because rough men stand ready to do violence on their behalf.\nGeorge Orwell.",
+    "Theirs not to reason why, Theirs but to do and die.\nAlfred Tennyson",
+    "I'm fed up to the ears with old men dreaming up wars for young men to die in.\nGeorge S. McGovern",
+    "War does not determine who is right - only who is left.\nBertrand Russell",
+    "The two most powerful warriors are patience and time.\nLeo Tolstoy"
+];
 
 _missionName = getText (missionConfigFile >> "onLoadName");
 _introText = selectRandom _quotes;
+_vehicleName = groupID (group player) + ": " + name player;
+_animationList = nil;
 
 // Identify which faction the unit belongs to.
 _unitFaction = toLower (faction player);
@@ -186,6 +202,14 @@ if (_recognised) then {
 
             case "uavFeed": {
                 [_uavMarker, _missionName + " - " + _missionLocation, [400,200,0,1], _uavMarkerType] execVM "src\intro\scripts\bmt_intro_uav.sqf";
+            };
+
+            case "playerCamera": {
+                [_missionName, _missionLocation, _vehicleName, false] execVM "src\intro\scripts\bmt_intro_playerCamera.sqf";
+            };
+
+            default {
+                player sideChat format ["ERROR (intro.sqf): Undefined intro type %1. It must be: blackScreen, uavFeed or playerCamera", _introType];
             };
         };
 

@@ -3,8 +3,13 @@
 // Author: TheMagnetar                                                                                   //
 // Version 0.1                                                                                           //
 // File creation: 2015/03/09                                                                             //
-// Description: Aquest document serveix per definir parmàmetres bàsics per la configuració del Task Force //
-//             Arrowhead Radio (TFAR) https://github.com/michail-nikolaev/task-force-arma-3-radio/wiki   //
+// Description: This document is used in order to define basic configuration parameters of the mod       //
+//              Task Force Arrowhead Radio (TFAR) that can be found in:                                  //
+//              https://github.com/michail-nikolaev/task-force-arma-3-radio/wiki                         //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
