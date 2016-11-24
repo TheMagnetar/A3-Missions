@@ -15,7 +15,6 @@
 private ["_briefingAdmin", "_briefingNotes", "_briefingEndings", "_briefingJip"];
 private ["_respawnDescription", "_respawnType", "_respawnTickets"];
 private ["_debriefingEntries", "_endingEntry", "_endingTitle", "_endingDescription"];
-private
 
 //=======================================================================================================//
 // MESSAGES ONLY SHOWN TO THE ADMINISTRATOR.                                                             //
