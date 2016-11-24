@@ -27,7 +27,7 @@ waitUntil {!isNil "bmt_param_debugOutput"};
 waitUntil {time > 0};
 
 // Type of introduction: "blackScreen", "uavFeed" and "playerCamera"
-_introType = "playerCamera";
+_introType = "blackScreen";
 
 _quotes = [
     "Whoever said the pen is mightier than the sword obviously never encountered automatic weapons.\nDouglas MacArthur.",
