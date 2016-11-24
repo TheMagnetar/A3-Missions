@@ -6,6 +6,10 @@
 // Description: This document generates the mission briefing for units belonging to the RHS faction      //
 //              Insurgents "rhs_faction_insurgents".                                                     //
 //              http://class.rhsmods.org/rhsafrf/CfgGroups_Indep_rhs_faction_insurgents.html             //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 0.1 (2015/06/04) Initial version.                                                            //
 //         1.0 (2015/11/26) First public version.                                                        //
 //=======================================================================================================//

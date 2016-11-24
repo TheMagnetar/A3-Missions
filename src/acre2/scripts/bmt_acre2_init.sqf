@@ -5,6 +5,10 @@
 // File creation: 2015/04/27                                                                             //
 // Description: This script configures the Advanced Combat Radio Environment 2 (ACRE2) mod that can be   //
 //              found in http://gitlab.idi-systems.com/idi-systems/acre2-public/wikis/home               //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

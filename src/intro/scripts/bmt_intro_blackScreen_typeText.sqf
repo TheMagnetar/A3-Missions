@@ -5,7 +5,19 @@
 // File creation: 2015/04/03                                                                             //
 // Description: This script serves as a mission introduction. A black screen with a citation initially   //
 //              appears. It fades slowly using a blur effect while showing the mission name, mission     //
-//              location and mission date.                                                               //
+//              location and mission date. This function should not be manually executed, since it is    //
+//              directly called from `missionConfig/intro/scripts/bmt_intro.sqf`.                        //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - 0: Mission name <STRING>.                                                             //
+//               - 1: Mission location <STRING>.                                                         //
+//               - 2: Text displayed in the center of the screen <STRING>.                               //
+//                                                                                                       //
+//              Example:                                                                                 //
+//               [                                                                                       //
+//                 "Operation Desert Fox", "Iran","Soldiers live. And wonder why.\nGlen Cook"            //
+//               ] execVM "src/intro/scripts/bmt_intro_blackScreen_typeText.sqf";                        //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
@@ -14,8 +26,6 @@ params ["_missionName", "_missionLocation", "_introText"];
 // Show a black screen.
 titleCut ["", "BLACK FADED", 999];
 
-waitUntil{!(isNil "bmt_preload_completed")};
-
 // Disable simulation for all units during the black screen.
 {
     _x enableSimulation false;
@@ -23,8 +33,9 @@ waitUntil{!(isNil "bmt_preload_completed")};
 
 // Citation display.
 titleText [_introText,"PLAIN"];
-titleFadeOut 7;
-sleep 5;
+
+waitUntil {missionNamespace getVariable ["bmt_var_init_preloadCompleted", false];};
+titleFadeOut 5;
 
 // Reenable simulation for all units.
 {
@@ -48,5 +59,7 @@ sleep 5;
 "dynamicBlur" ppEffectCommit 5;
 
 titleCut ["", "BLACK IN", 5];
+
+player setVariable ["bmt_var_init_introFinished", true, true];
 
 //============================================= END OF FILE =============================================//

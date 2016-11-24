@@ -6,6 +6,10 @@
 // Description: This document is used in order to define basic configuration parameters of the mod       //
 //              Advanced Combat Radio Environment 2 (ACRE2) that can be found in:                        //
 //              http://gitlab.idi-systems.com/idi-systems/acre2-public/wikis/home                        //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
@@ -31,10 +35,11 @@
 // Babel functionality configuration.                                                                    //
 //=======================================================================================================//
 
-bmt_acre2_languages = [["english","English"],["russian","Russian"],["farsi","Farsi"],["greek","Greek"], ["german", "German"]];
+bmt_acre2_languages = [["english","English"],["russian","Russian"],["arabic","Arabic"],["farsi","Farsi"],["greek","Greek"], ["german", "German"]];
 
 bmt_acre2_language_rhsusaf = ["english"];
 bmt_acre2_language_rhsafrf = ["russian"];
+bmt_acre2_language_rhsins  = ["arabic"];
 bmt_acre2_language_blufor  = ["english"];
 bmt_acre2_language_opfor   = ["farsi"];
 bmt_acre2_language_indfor  = ["greek"];

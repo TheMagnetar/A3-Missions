@@ -4,6 +4,10 @@
 // Version: 1.0                                                                                          //
 // File creation: 2015/12/07                                                                             //
 // Description: This function creates a zeus module and assigns its owner to the administrator.          //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

@@ -18,7 +18,7 @@
 #ifdef BMT_FUNCTIONS_INTERNAL
     class ace3 {
         file = "src\ace3\functions";
-        class ace3_assignWounds {};
+        class ace3_assignWounds    { };
         //class ace3_config_preInit  { PreInit = 1; };
         class ace3_config_postInit { PostInit = 1; };
         class ace3_config_revive   { PostInit = 1; };

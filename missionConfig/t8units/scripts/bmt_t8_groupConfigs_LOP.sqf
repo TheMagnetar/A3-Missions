@@ -7,6 +7,10 @@
 // Description: This file defines group configurations for T8 Units. Only those groups in Leights Opfor  //
 //              Pack are defined here. Originally based on SavageCDN's configuration files:              //
 //              https://github.com/SavageCDN/T8Units_Group_Configs                                       //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

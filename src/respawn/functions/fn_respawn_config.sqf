@@ -1,3 +1,17 @@
+//=======================================================================================================//
+// File: fn_respawn_config.sqf                                                                           //
+// Author: TheMagnetar                                                                                   //
+// Version: 1.0                                                                                          //
+// File creation: 2015/10/02                                                                             //
+// Description: This function configures the diffetent parameters of the BMT Respawn system. It is       //
+//              executed during the PostInit phase.                                                      //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
+// Changes: 1.0 (2015/11/26) First public version.                                                       //
+//=======================================================================================================//
+
 private ["_numRespawns", "_pos"];
 
 // The player is not dead.
@@ -42,3 +56,5 @@ switch (bmt_param_respawn_tickets) do {
         player setVariable ["bmt_var_numRespawns", _numRespawns, true];
     };
 };
+
+//============================================= END OF FILE =============================================//

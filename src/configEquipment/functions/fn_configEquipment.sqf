@@ -5,10 +5,12 @@
 // File creation: 2015/04/02                                                                             //
 // Description: This function equips the unit according to a specified role and depending on the faction //
 //              it belongs to.                                                                           //
+//                                                                                                       //
 //              Arguments:                                                                               //
 //               - 0: unit role <STRING> or unit role with additional options <ARRAY>.                   //
 //               - 1: unit <OBJECT>.                                                                     //
 //               - 2: unit faction <STRING><OPTIONAL>.                                                   //
+//                                                                                                       //
 //              Examples:                                                                                //
 //               - Unit is a Fire Team Leader.                                                           //
 //                   ["tl", this] call bmt_fnc_configEquipment;                                          //
@@ -25,17 +27,20 @@
 //                  psg                     Platoon Sergeant                                             //
 //                  rto                     Platoon Radiotelephone Operator                              //
 //                  fo                      Forward Observer                                             //
+//                  jtac                    Joint Terminal Attack Controller                             //
 //                  me                      Platoon Medic                                                //
 //                  sl                      Squad Leader                                                 //
 //                  tl                      Team Leader                                                  //
 //                  rfl                     Rifleman                                                     //
 //                  rflat                   Rifleman with AT4                                            //
+//                  rfluav                  Rifleman with UAV (Raven)                                    //
 //                  gr                      Grenadier                                                    //
 //                  ar                      Automatic Rifleman                                           //
+//                  aar                     Assitant Automatic Rifleman                                  //
 //                  dm                      Designated Marksman                                          //
 //                  mg                      Machine Gunner                                               //
 //                  amg                     Assitant Machine Gunner                                      //
-//                  at                      Anti-Tank)                                                   //
+//                  at                      Anti-Tank                                                    //
 //                  aat                     AT Ammo handler                                              //
 //                  aa                      Anti-Aircraft gunner                                         //
 //                  aaa                     Anti-Aircraft Assitant                                       //
@@ -49,8 +54,7 @@
 //                  div                     Diver                                                        //
 //                  hplt                    Helicopter pilot                                             //
 //                  jplt                    Jet pilot                                                    //
-//                                                                                                       //
-//                  hmmwv                   Equipment for HMMWVs                                         //
+//                  ccrw                    Combat Crew                                                  //
 //                                                                                                       //
 //              while the list of supported factions is:                                                 //
 //                                                                                                       //
@@ -71,6 +75,7 @@
 //                  rhs_faction_usarmy_d    United States Army (Desert)                                  //
 //                  rhs_faction_usmc_wd     United States Marine Corps (Woodland)                        //
 //                  rhs_faction_usmc_d      United States Marine Corps (Desert)                          //
+//                  rhs_faction_usn         United States Navy                                           //
 //                  rhs_faction_insurgents  Insurgents                                                   //
 //                  rhs_faction_vpvo        Soviet Air Defense Forces (Voyska protivovozdushnoy oborony) //
 //                  rhs_faction_vdv         Russian Airborne Troops (Vozdushno-desantnye voyska)         //
@@ -99,7 +104,7 @@ if (isNil "_unitFaction") then {
 _unit setVariable ["bmt_var_configEquipment", _unitOptions, true];
 
 // Begin gear assignement depending on unit's role.
-_unit setVariable ["bmt_var_configEquipment_Ready", false, true];
+_unit setVariable ["bmt_var_init_configEquipmentReady", false, true];
 
 // Include file for equipment configuration.
 #include "..\..\..\missionConfig\configEquipment\scripts\bmt_configEquipment_options.sqf";
@@ -186,7 +191,7 @@ switch (_unitFaction) do {
 
 if (_recognised) then {
     // DEBUG OUTPUT.
-    _unit setVariable ["bmt_var_configEquipment_Ready", true, true];
+    _unit setVariable ["bmt_var_init_configEquipmentReady", true, true];
     if (bmt_param_debugOutput == 1) then {
         _unit sideChat format ["DEBUG (fn_configEquipment.sqf): unit equiped with gear of faction: %1", _unitFaction];
     };

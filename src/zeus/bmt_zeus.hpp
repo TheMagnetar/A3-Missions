@@ -17,8 +17,8 @@
 #ifdef BMT_FUNCTIONS_INTERNAL
     class zeus {
         file = "src\zeus\functions";
-        class zeus_addGroups     {};
-        class zeus_addObjects    {};
+        class zeus_addGroups     { };
+        class zeus_addObjects    { };
         class zeus_createModule  { PreInit = 1; };
         class zeus_eventHandlers { PostInit = 1; };
 

@@ -6,6 +6,7 @@
 // Description: This script equips the unit according to a specified role and depending on the faction   //
 //              it belongs to. It relies on Virtual Arsenal Profiles, which need to be saved previously, //
 //              in order to load the desired set of equipment.                                           //
+//                                                                                                       //
 //              Arguments:                                                                               //
 //               - none                                                                                  //
 //                                                                                                       //

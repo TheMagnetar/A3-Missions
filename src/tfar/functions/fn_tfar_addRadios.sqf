@@ -6,8 +6,10 @@
 // Description: This function adds the defined radios to a unit's inventory in case the default radios   //
 //              that are assigned are not suficient. Task Force Arrowhead Radio (TFAR)                   //
 //              https://github.com/michail-nikolaev/task-force-arma-3-radio/wiki                         //
+//                                                                                                       //
 //              Arguments:                                                                               //
 //               - 0: unit whose radios must be configured <OBJECT>.                                     //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

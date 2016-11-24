@@ -1,3 +1,9 @@
+class ace_medical_blood_enabledFor {
+    value = 2;
+    typeName = "SCALAR";
+    force = 1;
+};
+
 class ace_common_forceAllSettings {
     value = 0;
     typeName = "BOOL";

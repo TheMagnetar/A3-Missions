@@ -5,6 +5,10 @@
 // File creation: 2015/03/06                                                                             //
 // Description: This script configures the server specific side of Task Force Arrowhead Radio (TFAR)     //
 //             (https://github.com/michail-nikolaev/task-force-arma-3-radio/wiki).                       //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

@@ -2,9 +2,10 @@
 // File: fn_ace3_assignWounds.sqf                                                                        //
 // Author: TheMagnetar                                                                                   //
 // Version: 1.0                                                                                          //
-// File creation: 2015/11/06                                                                      //
-// Description: Aquest document serveix per modificar les ferides a diferents parts del cos a una unitat  //
+// File creation: 2015/11/06                                                                             //
+// Description: Aquest document serveix per modificar les ferides a diferents parts del cos a una unitat //
 //             fent servir el sistema mèdic de ACE3. http://ace3mod.com/wiki/index.html                  //
+//                                                                                                       //
 //             Arguments:                                                                                //
 //               - 0: objecte al que se li modificaran les ferides <OBJECT>.                             //
 //               - 1: part del cos <STRING>.                                                             //

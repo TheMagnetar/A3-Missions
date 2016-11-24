@@ -22,7 +22,7 @@
         class respawn_exitSpectator    { };
         class respawn_moveToMarker     { };
         class respawn_respawnCounter   { };
-        class respawn_substractTickets { };
+        class respawn_manageTickets { };
     };
 #endif
 
@@ -69,6 +69,13 @@
         values[] = {0, 1, 2};
         texts[] = {"Unlimited", "None", "Mission defined"};
         default = BMT_RESPAWN_NUMTICKETS_CONFIG;
+    };
+
+    class bmt_param_respawn_killCam {
+        title = "Kill camera";
+        values[] = {0, 1};
+        texts[] = {"Disabled", "Enabled"};
+        default = BMT_RESPAWN_KILLCAM;
     };
 #endif
 

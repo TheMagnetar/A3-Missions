@@ -5,6 +5,10 @@
 // File creation: 2015/02/22                                                                             //
 // Description: This script configures the Task Force Arrowhead Radio (TFAR) mod that can be found in    //
 //              https://github.com/michail-nikolaev/task-force-arma-3-radio/wiki                         //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
