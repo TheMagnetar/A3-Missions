@@ -5,6 +5,10 @@
 // File creation: 2015/09/29                                                                             //
 // Description: This function checks if the parameter configurations are the ones that are modified the  //
 //              ones especified by the mission author.                                                   //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

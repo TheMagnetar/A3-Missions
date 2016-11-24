@@ -4,7 +4,7 @@
 // Version: 1.0                                                                                          //
 // File creation: 2015/11/26                                                                             //
 // Description: This file has the purpose to define the different mission parameters without requiring   //
-//              to change them in each of the module folders.                                            //
+//              to change them in each of the module folders. No entry should be manually deleted.       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
@@ -43,13 +43,15 @@
 // JIP support                                                                                           //
 //=======================================================================================================//
 #define BMT_JIP_ENABLED      1    // 0 = JIP disabled, 1 = JIP enabled.
+#define BMT_JIP_SAVESTATUS     1    // 0 = Disabled, 1 = Enabled.
 
 //=======================================================================================================//
 // RESPAWN                                                                                               //
 //=======================================================================================================//
 #define BMT_RESPAWN_NUMTICKETS_CONFIG    2 // 0 = Unlimited, 1 = No tickets, 2 = Mission based.
-#define BMT_RESPAWN_SAVEGEAR             0 // 0 = Gear is not saved, 1 gear is saved.
+#define BMT_RESPAWN_SAVEGEAR             1 // 0 = Gear is not saved, 1 gear is saved.
 #define BMT_RESPAWN_TICKETS              1 // 0 = per side, 1 = on a player basis.
+#define BMT_RESPAWN_KILLCAM              0 // 0 = Disabled, 1 = Enabled
 
 //=======================================================================================================//
 // T8 Units                                                                                              //

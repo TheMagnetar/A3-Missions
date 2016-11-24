@@ -5,8 +5,10 @@
 // File creation: 06/03/2015                                                                             //
 // Description: Function to configure default frequencies of the Task Force Arrowhead Radio (TFAR)       //
 //              https://github.com/michail-nikolaev/task-force-arma-3-radio/wiki                         //
+//                                                                                                       //
 //              Arguments:                                                                               //
 //               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

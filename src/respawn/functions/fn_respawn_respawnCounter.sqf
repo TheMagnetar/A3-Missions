@@ -4,6 +4,10 @@
 // Version: 1.0                                                                                          //
 // File creation: 2015/10/02                                                                             //
 // Description: This function displays or hides the counter until the player is respawned.               //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - 0: display (true) or hides the counter <BOOL>.                                        //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

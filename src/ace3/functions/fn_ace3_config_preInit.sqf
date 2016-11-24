@@ -20,6 +20,14 @@ _moduleError = false;
 // Define ACE variables manually using ACE_common_fnc_setSetting function:
 //  ["setting_name"], Value, forceSetting(bool), broadcastSetting(bool)] ACE_common_fnc_setSetting
 
+if (isClass (configFile >> "CfgPatches" >> "ace_medical_blood")) then {
+    ["ace_medical_blood", 2, true, true] call ACE_common_fnc_setSetting;                                     // Scalar. 1 = Disabled, 1 = enabled for players, 2 = Enabled.
+} else {
+    _moduleError = true;
+    diag_log "(BMT Debug) File not found: ace_medical_blood.pbo.";
+};
+
+
 if (isClass (configFile >> "CfgPatches" >> "ace_common")) then {
     ["ace_common_forceAllSettings", false, true, true] call ACE_common_fnc_setSetting;                         // 0* = Disabled, 1 = Enabled.
 

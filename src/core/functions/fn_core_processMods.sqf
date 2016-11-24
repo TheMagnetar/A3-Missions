@@ -5,8 +5,10 @@
 // File creation: 2015/06/09                                                                             //
 // Description: This function has the goal of identifying if certain mods have been loaded for further   //
 //              and more in depth configuration in other scripts in this template.                       //
+//                                                                                                       //
 //              Arguments:                                                                               //
 //               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

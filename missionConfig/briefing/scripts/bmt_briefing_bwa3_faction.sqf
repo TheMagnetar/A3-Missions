@@ -5,6 +5,10 @@
 // File creation: 2015/11/05                                                                             //
 // Description: This document generates the mission briefing for units belonging to the faction          //
 //              Bundeswehr (bwa3_faction).                                                               //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

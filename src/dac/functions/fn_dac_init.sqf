@@ -8,8 +8,10 @@
 //              automatically creates a Logic Module "DAC_Source_Extern" (there is no need to place it   //
 //              using the editor) and initialises the variable "DAC_STRPlayers" with the playable units' //
 //              names in order to avoid having to introduce them in the file "DAC_Config_Creator.sqf".   //
+//                                                                                                       //
 //              Arguments:                                                                               //
 //               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

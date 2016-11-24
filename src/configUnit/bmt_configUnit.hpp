@@ -17,7 +17,7 @@
 #ifdef BMT_FUNCTIONS_INTERNAL
     class configUnit {
         file = "src\configUnit\functions";
-        class configUnit{};
+        class configUnit { };
     };
 #endif
 

@@ -5,6 +5,10 @@
 // File creation: 2015/05/10                                                                             //
 // Description: This script configures the presets for the different radios of Advanced Combat Radio     //
 //              Environment 2 (ACRE2) http://gitlab.idi-systems.com/idi-systems/acre2-public/wikis/home  //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

@@ -4,6 +4,10 @@
 // Version: 1.0                                                                                          //
 // File creation: 2015/12/06                                                                             //
 // Description: This file initialises T8 Units script.                                                   //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/12/06) Initial version.                                                            //
 //=======================================================================================================//
 

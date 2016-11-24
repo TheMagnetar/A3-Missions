@@ -7,12 +7,14 @@
 //              In this way, interferences or the presence of broadcast towers that amplify the signal   //
 //              strength can be simulated. It requires Task Force Arrowhead Radio (TFAR).                //
 //              https://github.com/michail-nikolaev/task-force-arma-3-radio/wiki                         //
+//                                                                                                       //
 //              Arguments:                                                                               //
 //               - 0 receving factor. The higher this number, the closer the transmitter has to be in    //
 //                 order to receive a clear signal <FLOAT>.                                              //
 //               - 1 transmitting factor. It multiplies the signal strength and therefore the higher it  //
 //                 is, the further the signal can be received <FLOAT>.                                   //
 //               - 2 unit that has the effect applied <OBJECT>.                                          //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

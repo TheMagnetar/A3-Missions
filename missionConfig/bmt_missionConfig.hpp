@@ -18,36 +18,43 @@ class Header {
     playerCountMultipleOf = 1; // Balancing in tvt or pvp game types.
 };
 
+//=======================================================================================================//
+// Mission configuration - Variables to configure different scripts of the template.                     //
+//=======================================================================================================//
 class bmt_config {
+    // Variables affecting the admin briefing.
     bmt_config_testedAddons = "*** List of addons with the corresponding tested version number. ***<br/>*** Each addon must have its own line. ***";
     bmt_config_templateVersion = "v1.0 (2016-05-14).";
     bmt_config_missionVersion = "vX.Y (date).";
-    bmt_config_missionCollaborators = "TheMagnetar (BMT) and *** Possible collaborators ***.";
+    bmt_config_missionCollaborators = "TheMagnetar (A3-BMT) and *** Possible collaborators ***.";
     bmt_config_missionDifficulty = "*** Expected mission difficulty. ***";
     bmt_config_missionSummary = "*** Mission summary for administrators. ***";
     bmt_config_missionNotesAndRemarks = "*** Additional notes and remarks from the mission author. ***";
 
 
-    bmt_config_jipAllowedTime = 300;   // JIP players are enabled until the specified time (in seconds). To
-                                       // enable always JIP players set to -1.
-    bmt_config_numAllowedRespawns = -99; // Number of allowed respawns. Set to -1 to have unlimited respawns,
-                                       // 0 to disable respawn and a positive number to limit the number of
-                                       // respawns.
+    bmt_config_jipAllowedTime = 300;     // JIP players are enabled until the specified time (in seconds).
+                                         // To enable always JIP players set to -1.
+    bmt_config_numAllowedRespawns = -99; // Number of allowed respawns. Set to -99 to have unlimited
+                                         // respawns, 0 to disable respawn and a positive number to limit
+                                         // the number of respawns. As a side note, if ACE3 Revive system
+                                         // is used, a positive number will effectively limit the amount of
+                                         // times a player can be revived by a medic. Nevertheless,
+                                         // activating ACE 3 Revive will disable respawning.
 };
 
 //=======================================================================================================//
 // Loading screen: https://community.bistudio.com/wiki/Description.ext                                   //
 //=======================================================================================================//
 
-onLoadName = "*** Mission name. ***";            // Mission name.
-onLoadMission = "*** Mission description. ***";  // Brief mission description.
-onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)";  // Message shown while loading introduction.
-onLoadIntroTime = 0;                             // Show (1) or hide (0) date and time on when loading introduction.
-onLoadMissionTime = 0;                           // Show (1) or hide (0) date and time on when loading mission.
-author = "*** Author(s). ***";                   // Author.
-loadScreen = "images\loadScreen.jpg";            // Image displayed when loading mission.
-overviewPicture = "images\overviewPicture.jpg";  // Imatge displayed when selecting mission (aspect 2:1).
-overviewText = "*** Text to show. ***";          // Text shown when selecting mission.
+onLoadName = "*** Mission name. ***";                     // Mission name.
+onLoadMission = "*** Mission description. ***";           // Brief mission description.
+onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)"; // Message shown while loading introduction.
+onLoadIntroTime = 0;                                      // Show (1) or hide (0) date and time on when loading introduction.
+onLoadMissionTime = 0;                                    // Show (1) or hide (0) date and time on when loading mission.
+author = "*** Author(s). ***";                            // Author.
+loadScreen = "images\loadScreen.jpg";                     // Image displayed when loading mission.
+overviewPicture = "images\overviewPicture.jpg";           // Imatge displayed when selecting mission (aspect 2:1).
+overviewText = "*** Text to show. ***";                   // Text shown when selecting mission.
 
 //=======================================================================================================//
 // Respawn Settings: https://community.bistudio.com/wiki/Arma_3_Respawn                                  //

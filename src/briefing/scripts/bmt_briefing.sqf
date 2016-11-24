@@ -6,6 +6,10 @@
 // Description: This script is responsible for generating briefing entries depending on the player's     //
 //              faction. This is useful for TvT missions or with missions where factions in the same     //
 //              side have different objectives.                                                          //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 

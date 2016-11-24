@@ -6,6 +6,10 @@
 // Description: This document generates the mission briefing for units belonging to the RHS faction      //
 //              United States Marine Corps "rhs_faction_usmc_d"                                          //
 //              http://doc.rhsmods.org/index.php/United_States_Marine_Corps                              //
+//                                                                                                       //
+//              Arguments:                                                                               //
+//               - none                                                                                  //
+//                                                                                                       //
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
