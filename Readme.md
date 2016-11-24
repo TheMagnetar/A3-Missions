@@ -20,3 +20,4 @@ where:
 | **Operation Flypaper**             | co@08-14_OpFlypaper.Tanoa              | Magnetar       | -                            | Yes             |
 | **Operation Ghost**                | co@08-12_Ghost.Altis                   | Magnetar       | -                            | Yes             |
 | **Retaliation**                    | co@08-12_Retaliation.Kunduz            | Magnetar       | -                            | Yes             |
+| **Sabotage**                       | co@08-12_Sabotage.Altis                | Magnetar       | -                            | Yes             |
