@@ -1,0 +1,100 @@
+//=======================================================================================================//
+// File: Description.ext                                                                                 //
+// Author: TheMagnetar                                                                                   //
+// Version: 1.0                                                                                          //
+// File creation: 2015/02/22                                                                             //
+// Description: This file is used in order to configure different scenario attributes. In this case this //
+//              file presents a modular structure, where mission dependant variables (respawn type,      //
+//              authors, ...) are defined in a separate file. Functions and their permissions are        //
+//              declared also in this way.                                                               //
+// Changes: 1.0 (2015/11/26) First public version.                                                       //
+//=======================================================================================================//
+
+//=======================================================================================================//
+// MISSION PARAMETERS DEFINITIONS: The variables here defined allow controlling the default values of    //
+//                                 the mission parameters.                                               //
+//=======================================================================================================//
+#include "missionConfig\bmt_missionParameters_definitions.hpp"
+
+//=======================================================================================================//
+// MISSION CONFIGURATION: These parameters must be modified by the mission editor.                       //
+//=======================================================================================================//
+#include "missionConfig\bmt_missionConfig.hpp"
+
+//=======================================================================================================//
+// EXTERNAL DEFINITIONS: Definitions from external scripts and/or addons.                                //
+//                       Currently used by: T8-Units and ACE 3.                                          //
+//=======================================================================================================//
+#define BMT_EXTERNAL_DEFINITIONS
+    #include "bmt_components.hpp"
+#undef BMT_EXTERNAL_DEFINITIONS
+
+//=======================================================================================================//
+// ADDON CONFIGURATION: This file must be modified by the mission editor and allow configuring which     //
+//                      addons are configured using the scripts provided in "Arma 3 Basic Mission        //
+//                      Template" (A3-BMT). Some addons may also allow further tweaking in the parameter //
+//                      selection screen.                                                                //
+//=======================================================================================================//
+class CfgComponents {
+    #define BMT_COMPONENTS
+        #include "bmt_components.hpp"
+    #undef BMT_COMPONENTS
+};
+
+//=======================================================================================================//
+// DEBRIEFING: Additional information displayed when mission ends.                                       //
+//=======================================================================================================//
+#include "missionConfig\bmt_missionDebriefing.hpp"
+
+//=======================================================================================================//
+// MISSION PARAMETERS: This section defines which parameters are available in the parameter selection    //
+//                     screen. Only the administrator can modify them.                                   //
+//=======================================================================================================//
+class Params {
+    //===================================================================================================//
+    // Debug: Variable to control the level of debug output. Activated by default.                       //
+    //===================================================================================================//
+    class bmt_param_debugOutput {
+        title = "Debug Mode";
+        values[] = {0,1};
+        texts[] = {"Deactivated","Activated"};
+        default = BMT_DEBUG;
+    };
+
+    #define BMT_PARAMETERS
+        #include "bmt_components.hpp"
+    #undef BMT_PARAMETERS
+};
+
+//=======================================================================================================//
+// FUNCTIONS: Functions used in the "Arma 3 Basic Mission Template" (A3-BMT).                            //
+//=======================================================================================================//
+class CfgFunctions {
+    class bmt {
+        #define BMT_FUNCTIONS_INTERNAL
+            #include "bmt_components.hpp"
+        #undef BMT_FUNCTIONS_INTERNAL
+    };
+
+    #define BMT_FUNCTIONS_EXTERNAL
+        #include "bmt_components.hpp"
+    #undef BMT_FUNCTIONS_EXTERNAL
+};
+
+//=======================================================================================================//
+// REMOTE FUNCTION RESTRICTIONS: This section defines the restriction of remote execution of functions.  //
+//                               https://community.bistudio.com/wiki/CfgRemoteExec                       //
+//=======================================================================================================//
+class CfgRemoteExec {
+    // List of functions that can be send by the client by using emoteExec/remoteExecCall.
+    class Functions {
+        mode = 2;  // Default remoteExecc state: 0: deactivated, 1: activated with whitelist, 2: activated ignoring whitelist (default).
+        jip = 1;   // Hability to send JIP messages. 0: deactivated, 1: activatedt.
+
+        #define BMT_FUNCTIONS_REMOTEEXEC
+            #include "bmt_components.hpp"
+        #undef BMT_FUNCTIONS_REMOTEEXEC
+    };
+};
+
+//============================================= END OF FILE =============================================//
