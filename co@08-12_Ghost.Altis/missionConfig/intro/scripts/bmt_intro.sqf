@@ -27,7 +27,7 @@ waitUntil {!isNil "bmt_param_debugOutput"};
 waitUntil {time > 0};
 
 // Type of introduction: "blackScreen", "uavFeed" and "playerCamera"
-_introType = "playerCamera";
+_introType = "blackScreen";
 
 _quotes = [
     "Whoever said the pen is mightier than the sword obviously never encountered automatic weapons.\nDouglas MacArthur.",
@@ -137,7 +137,7 @@ switch (_unitFaction) do {
 
     // RHS: USAF "United States Army" (OCP) faction.
     case "rhs_faction_usarmy_d": {
-        _missionLocation = "Location"; _uavMarker = "marker"; _uavMarkerType = [];
+        _missionLocation = "North of Altis"; _uavMarker = "marker"; _uavMarkerType = [];
     };
 
     // RHS: USAF "United States Army" (UCP) faction.

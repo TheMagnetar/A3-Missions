@@ -86,9 +86,9 @@ switch (_TypNumber) do
         ];
         _Unit_Pool_T = [
             "O_APC_Tracked_02_cannon_F",                   // BTR-K Kamysh
-            "O_APC_Tracked_02_AA_F",                       // ZSU-39 Tigris
+//            "O_APC_Tracked_02_AA_F",                       // ZSU-39 Tigris
             "O_APC_Wheeled_02_rcws_F",                     // MSE-3 Marid
-            "O_MBT_02_arty_F",                             // 2S9 Sochor
+//            "O_MBT_02_arty_F",                             // 2S9 Sochor
             "O_MBT_02_cannon_F"                            // T-100 Varsuk
         ];
         _Unit_Pool_A = [

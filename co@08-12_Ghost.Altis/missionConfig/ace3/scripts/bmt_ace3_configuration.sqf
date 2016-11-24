@@ -27,7 +27,7 @@ private ["_heliFRIES"];
 // Unit name variables must be declared as string.
 
 // Medical
-_medics = [];
+_medics = ["bmt_Alpha1_2", "bmt_Alpha2_5"];
 _medicVehicles = [];
 _medicFacilities = [];
 _doctors = [];

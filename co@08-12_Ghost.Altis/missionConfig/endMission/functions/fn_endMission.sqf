@@ -13,8 +13,20 @@
 // Changes: 1.0 (2015/11/26) First public version.                                                       //
 //=======================================================================================================//
 
+if ((colonelDead == 1) && ({alive _x} count playableUnits > 0)) then {
+    ["EndingSuccess1",true] call BIS_fnc_endMission;
+};
+
+if ((colonelDead == 1) && ({_x getVariable ["bmt_var_playerAlive", true]} count allPlayers <= 0)) then {
+    ["EndingFailure1",false] call BIS_fnc_endMission;
+};
+
+if ((colonelDead == 0) && ({alive _x} count playableUnits > 0)) then {
+    ["EndingFailure2",false] call BIS_fnc_endMission;
+};
+
 // If all players are dead and none of the objectives were completed, the mission was a total disaster.
-if ({_x getVariable ["bmt_var_playerAlive", true]} count allPlayers <= 0) then {
+if ((colonelDead == 0) && ({_x getVariable ["bmt_var_playerAlive", true]} count allPlayers <= 0)) then {
     ["Disaster",false] spawn BIS_fnc_endMission;
 };
 

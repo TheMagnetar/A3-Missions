@@ -13,8 +13,8 @@
 //=======================================================================================================//
 class Header {
     gameType = Coop;           // Game type: https://community.bistudio.com/wiki/Multiplayer_Game_Types
-    minPlayers = 1;            // Minimum number of players.
-    maxPlayers = 14;           // Maximum number of players.
+    minPlayers = 8;            // Minimum number of players.
+    maxPlayers = 12;           // Maximum number of players.
     playerCountMultipleOf = 1; // Balancing in tvt or pvp game types.
 };
 
@@ -23,13 +23,13 @@ class Header {
 //=======================================================================================================//
 class bmt_config {
     // Variables affecting the admin briefing.
-    bmt_config_testedAddons = "*** List of addons with the corresponding tested version number. ***<br/>*** Each addon must have its own line. ***";
+    bmt_config_testedAddons = "- Advanced Combat Environment 3 (ACE3) v3.8.1.<br/>- Advanced Combat Radio Environment 2 (ACRE2) v2.2.0.<br/>- Community Base Addons (CBA) v3.01.<br/>- Dynamic-AI-Creator (DAC) v3.1b (Required).<br/>- RHS United States Army Forces (RHS USAF) v0.4.1.1. (Required)<br/>- Task Force Arrowhead Radio (TFAR) v0.9.12.";
     bmt_config_templateVersion = "v1.0 (2016-05-14).";
-    bmt_config_missionVersion = "vX.Y (date).";
-    bmt_config_missionCollaborators = "TheMagnetar (A3-BMT) and *** Possible collaborators ***.";
-    bmt_config_missionDifficulty = "*** Expected mission difficulty. ***";
-    bmt_config_missionSummary = "*** Mission summary for administrators. ***";
-    bmt_config_missionNotesAndRemarks = "*** Additional notes and remarks from the mission author. ***";
+    bmt_config_missionVersion = "v1.1 (2016-11-24).";
+    bmt_config_missionCollaborators = "-";
+    bmt_config_missionDifficulty = "High";
+    bmt_config_missionSummary = "Operation ""Ghost"" is a mission where two fire teams and a sniper team must eliminate an enemy officer in a highly populated civilian area. In order to complete the objective, between 8 to 12 well coordinated players are required, since it is considered a difficult mission. The task is not updated once it is completed and therefore, the players must decide if they have completed it or not";
+    bmt_config_missionNotesAndRemarks = "Tasks are not updated once they are completed and it is up to the players to decide if it has been completed or not. Patrols and enemy units are totally random";
 
 
     bmt_config_jipAllowedTime = 300;     // JIP players are enabled until the specified time (in seconds).
@@ -46,15 +46,15 @@ class bmt_config {
 // Loading screen: https://community.bistudio.com/wiki/Description.ext                                   //
 //=======================================================================================================//
 
-onLoadName = "*** Mission name. ***";                     // Mission name.
-onLoadMission = "*** Mission description. ***";           // Brief mission description.
+onLoadName = "Operation Ghost";                           // Mission name.
+onLoadMission = "Eliminate the enemy colonel in order to destabilise the enemy's military structure in the region.";  // Brief mission description.
 onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)"; // Message shown while loading introduction.
 onLoadIntroTime = 0;                                      // Show (1) or hide (0) date and time on when loading introduction.
 onLoadMissionTime = 0;                                    // Show (1) or hide (0) date and time on when loading mission.
-author = "*** Author(s). ***";                            // Author.
-loadScreen = "images\loadScreen.jpg";                     // Image displayed when loading mission.
-overviewPicture = "images\overviewPicture.jpg";           // Imatge displayed when selecting mission (aspect 2:1).
-overviewText = "*** Text to show. ***";                   // Text shown when selecting mission.
+author = "TheMagnetar";                          // Author.
+loadScreen = "images\loadScreen.jpg";            // Image displayed when loading mission.
+overviewPicture = "images\overviewPicture.jpg";  // Imatge displayed when selecting mission (aspect 2:1).
+overviewText = "Inteligence informs of internal tensions in the military structure of CSAT in the region of Altis. If we succeed in eliminating the actual leader, internal conflicts wil weaken the region's military control, facilitating the military operantions in order to recover lost territory. The enemy colonel must be, therefore, eliminated using their own weapons in order to instigate chaos and blame the assassination to one of the internal factions.";          // Text shown when selecting mission.
 
 //=======================================================================================================//
 // Respawn Settings: https://community.bistudio.com/wiki/Arma_3_Respawn                                  //

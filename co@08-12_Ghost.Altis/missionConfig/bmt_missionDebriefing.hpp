@@ -16,47 +16,34 @@ class CfgDebriefing {
     class EndingSuccess1 {
         title = "Ending #1";
         subtitle = "";
-        description = "*** Debriefing Ending #1. ***";
+        description = "Allied forces have succeeded in eliminating the enemy colonel and instigate chaos in the CSAT comand structure";
         pictureBackground = "";
         picture = "b_inf";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
-
-    class EndingSuccess2 {
-        title = "Ending #2";
-        subtitle = "";
-        description = "*** Debriefing Ending #2. ***";
-        pictureBackground = "";
-        picture = "b_inf";
-        pictureColor[] = {0.0,0.3,0.6,1};
-    };
-
-    //class EndingSuccess3, EndingSuccess4, ....
 
     class EndingFailure1 {
-        title = "Mission failed #1";
+        title = "Mission failed";
         subtitle = "";
-        description = "*** Debriefing for mission failed #1. ***";
+        description = "Allied forces have been eliminated after killing with the enemy colonel. Internal conflicts have started";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
     class EndingFailure2 {
-        title = "Mission failed #2";
+        title = "Mission failed";
         subtitle = "";
-        description = "*** Debriefing for mission failed #2. ***";
+        description = "Allied forces have aborted the mission";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
-    //class EndingFailure3, EndingFailure4, ....
-
     class Disaster {
         title = "Disaster";
         subtitle = "";
-        description = "*** Definition of disaster. ***";
+        description = "Allied forces have been killed without eliminating the enemy colonel";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};
