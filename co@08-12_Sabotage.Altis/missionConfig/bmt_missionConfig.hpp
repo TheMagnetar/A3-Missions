@@ -13,8 +13,8 @@
 //=======================================================================================================//
 class Header {
     gameType = Coop;           // Game type: https://community.bistudio.com/wiki/Multiplayer_Game_Types
-    minPlayers = 1;            // Minimum number of players.
-    maxPlayers = 14;           // Maximum number of players.
+    minPlayers = 4;            // Minimum number of players.
+    maxPlayers = 12;           // Maximum number of players.
     playerCountMultipleOf = 1; // Balancing in tvt or pvp game types.
 };
 
@@ -23,13 +23,13 @@ class Header {
 //=======================================================================================================//
 class bmt_config {
     // Variables affecting the admin briefing.
-    bmt_config_testedAddons = "*** List of addons with the corresponding tested version number. ***<br/>*** Each addon must have its own line. ***";
+    bmt_config_testedAddons = "- Advanced Combat Environment (ACE 3) v3.8.1.<br/>- Advanced Combat Radio Environment (ACRE2) v2.2.0.<br/>- Advanced Light Infantry Virtual Environment (ALIVE) v1.0.5 (Required).<br/>- ASR AI 3.<br/>- Community Base Addons (CBA) v3.1.0 (Required)<br/>- Dynamic-AI-Creator (DAC) v3.1b (Required).<br/>- RHS United States Army Forces (RHS-USAF) v0.4.1.1 (Required).<br/>- T8-Units v0.7 (Required).<br/>- Task Force Arrowhead Radio (TFAR) v0.9.12.";
     bmt_config_templateVersion = "v1.0 (2016-05-14).";
-    bmt_config_missionVersion = "vX.Y (date).";
-    bmt_config_missionCollaborators = "TheMagnetar (A3-BMT) and *** Possible collaborators ***.";
-    bmt_config_missionDifficulty = "*** Expected mission difficulty. ***";
-    bmt_config_missionSummary = "*** Mission summary for administrators. ***";
-    bmt_config_missionNotesAndRemarks = "*** Additional notes and remarks from the mission author. ***";
+    bmt_config_missionVersion = "v1.1 (2015-05-14).";
+    bmt_config_missionCollaborators = "-.";
+    bmt_config_missionDifficulty = "High";
+    bmt_config_missionSummary = "The mission is rather simple in its concept: players have to attack the enemy camp and destroy the air defenses but thanks to DAC and T8, unit patrolls are dynamic and the experience changes every time the mission is played. There is only one wheeled unit present (without heavy weapons), the rest are plain and simple infantry units";
+    bmt_config_missionNotesAndRemarks = "Tasks are not updated once they are completed and it is up to the players to decide if it has been completed or not. Patrols and enemy units are totally random.<br/>A virtual arsenal ammo box has been added at the LZ in order to resupply in case scripts do not function properly.";
 
 
     bmt_config_jipAllowedTime = 300;     // JIP players are enabled until the specified time (in seconds).
@@ -46,15 +46,15 @@ class bmt_config {
 // Loading screen: https://community.bistudio.com/wiki/Description.ext                                   //
 //=======================================================================================================//
 
-onLoadName = "*** Mission name. ***";                     // Mission name.
-onLoadMission = "*** Mission description. ***";           // Brief mission description.
+onLoadName = "Sabotage";                                  // Mission name.
+onLoadMission = "Destroy the enemy defenses";             // Brief mission description.
 onLoadIntro = "Arma 3 - Basic Mission Template (A3-BMT)"; // Message shown while loading introduction.
 onLoadIntroTime = 0;                                      // Show (1) or hide (0) date and time on when loading introduction.
 onLoadMissionTime = 0;                                    // Show (1) or hide (0) date and time on when loading mission.
-author = "*** Author(s). ***";                            // Author.
+author = "TheMagnetar";                                   // Author.
 loadScreen = "images\loadScreen.jpg";                     // Image displayed when loading mission.
 overviewPicture = "images\overviewPicture.jpg";           // Imatge displayed when selecting mission (aspect 2:1).
-overviewText = "*** Text to show. ***";                   // Text shown when selecting mission.
+overviewText = "Destroy the enemy defenses.";             // Text shown when selecting mission.
 
 //=======================================================================================================//
 // Respawn Settings: https://community.bistudio.com/wiki/Arma_3_Respawn                                  //

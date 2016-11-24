@@ -73,23 +73,23 @@ switch (_TypNumber) do
             "O_medic_F"                                    // Medic
         ];
         _Unit_Pool_V = [
-            "O_Quadbike_01_F",                             // Quad
-            "O_MRAP_02_F",                                 // Ifrit
-            "O_MRAP_02_gmg_F",                             // Ifrit GMG
-            "O_MRAP_02_hmg_F",                             // Ifrit HMG
-            "O_Truck_02_covered_F",                        // Kamaz Truck (Covered)
-            "O_Truck_02_Ammo_F",                           // Kamaz Truck (Ammo)
-            "O_Truck_02_transport_F",                      // Kamaz Truck (Transport)
-            "O_Truck_02_box_F",                            // Kamaz Truck (Repair box)
-            "O_Truck_02_fuel_F",                           // Kamaz Truck (Fuel)
-            "O_Truck_02_medical_F"                         // Kamaz Truck (Medical)
+            //"O_Quadbike_01_F",                             // Quad
+            //"O_MRAP_02_F",                                 // Ifrit
+            "O_MRAP_02_gmg_F"                             // Ifrit GMG
+            //"O_MRAP_02_hmg_F",                             // Ifrit HMG
+            //"O_Truck_02_covered_F",                        // Kamaz Truck (Covered)
+            //"O_Truck_02_Ammo_F",                           // Kamaz Truck (Ammo)
+            //"O_Truck_02_transport_F",                      // Kamaz Truck (Transport)
+            //"O_Truck_02_box_F",                            // Kamaz Truck (Repair box)
+            //"O_Truck_02_fuel_F",                           // Kamaz Truck (Fuel)
+            //"O_Truck_02_medical_F"                         // Kamaz Truck (Medical)
         ];
         _Unit_Pool_T = [
-            "O_APC_Tracked_02_cannon_F",                   // BTR-K Kamysh
-            "O_APC_Tracked_02_AA_F",                       // ZSU-39 Tigris
-            "O_APC_Wheeled_02_rcws_F",                     // MSE-3 Marid
-            "O_MBT_02_arty_F",                             // 2S9 Sochor
-            "O_MBT_02_cannon_F"                            // T-100 Varsuk
+            "O_APC_Tracked_02_cannon_F"                   // BTR-K Kamysh
+            //"O_APC_Tracked_02_AA_F",                       // ZSU-39 Tigris
+            //"O_APC_Wheeled_02_rcws_F",                     // MSE-3 Marid
+            //"O_MBT_02_arty_F",                             // 2S9 Sochor
+            //"O_MBT_02_cannon_F"                            // T-100 Varsuk
         ];
         _Unit_Pool_A = [
             "O_Heli_Attack_02_F",                          // Mi-48 Kajman

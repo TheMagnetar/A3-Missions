@@ -14,38 +14,36 @@
 //=======================================================================================================//
 class CfgDebriefing {
     class EndingSuccess1 {
-        title = "Ending #1";
+        title = "Total success!";
         subtitle = "";
-        description = "*** Debriefing Ending #1. ***";
+        description = "All enemy defense units have been destroyed.";
         pictureBackground = "";
         picture = "b_inf";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
     class EndingSuccess2 {
-        title = "Ending #2";
+        title = "Partial success";
         subtitle = "";
-        description = "*** Debriefing Ending #2. ***";
+        description = "Not all enemy air defenses have been destroyed";
         pictureBackground = "";
         picture = "b_inf";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
-    //class EndingSuccess3, EndingSuccess4, ....
-
     class EndingFailure1 {
-        title = "Mission failed #1";
+        title = "Mission failed";
         subtitle = "";
-        description = "*** Debriefing for mission failed #1. ***";
+        description = "All marines are dead, but they managed to destroy the enemy air defenses";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};
     };
 
     class EndingFailure2 {
-        title = "Mission failed #2";
+        title = "Mission failed";
         subtitle = "";
-        description = "*** Debriefing for mission failed #2. ***";
+        description = "All marines are dead without having destroyed all enemy air defenses";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};
@@ -56,7 +54,7 @@ class CfgDebriefing {
     class Disaster {
         title = "Disaster";
         subtitle = "";
-        description = "*** Definition of disaster. ***";
+        description = "All marines are dead without having destroyed any of the air defenses";
         pictureBackground = "";
         picture = "KIA";
         pictureColor[] = {0.0,0.3,0.6,1};

@@ -73,4 +73,14 @@ T8U_fnc_rmNVG_TEST =
 // Leights Opfor Pack group configs.
 #include "bmt_t8_groupConfigs_LOP.sqf"
 
+unitsT8 = [
+    [[_groupArray_OPF_F_OIA_InfTeam, "markerT8Units"], ["GARRISON"]],
+    [[_groupArray_OPF_F_OIA_InfTeam, "markerT8Units"], ["GARRISON"]],
+    [[_groupArray_OPF_F_OIA_InfSentry, "markerT8Units"], ["PATROL"]],
+    [[_groupArray_OPF_F_OIA_InfSentry, "markerT8Units"], ["PATROL"]],
+    [[_groupArray_OPF_F_OIA_InfSentry, "markerT8Units"], ["PATROL"]]
+];
+
+[ unitsT8 ] spawn T8U_fnc_Spawn;
+
 // ------------------------------------------------ THE END ---------------------------------------------------

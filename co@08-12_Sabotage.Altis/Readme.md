@@ -6,21 +6,21 @@ Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
 
 **Mission name**: Mission name.
 
-**Version**: vx.x (date).
+**Version**: v1.1 (date).
 
-**Author**: Author name.
+**Author**: TheMagnetar.
 
-**Contributors**: Names of the contributers.
+**Contributors**: -.
 
-**Game type**: Game type (Coop, TvT, PvP, ZvZ, ...).
+**Game type**: Coop.
 
-**Minimum number of players**: Minimum number of players suggested by the author.
+**Minimum number of players**: 8.
 
-**Minimum number of players**: Maximum number of players suggested by the author.
+**Minimum number of players**: 12.
 
-**Respawn**: Respawn type (None, bird, base, ...).
+**Respawn**: None (Spectator).
 
-**Dificulty**: Mission Dificulty.
+**Difficulty**: High.
 
 **Mission summary**: Brief description of the mission.
 
@@ -29,9 +29,81 @@ by TheMagnetar.
 
 **Necessary or recommended addons**: List of necessary and/or recommended addons.
 
+* Advanced Combat Environment (ACE 3) v3.8.1.
+* Advanced Combat Radio Environment (ACRE 2) v2.2.0.
+* Advanced Light Infantry Virtual Environment (ALIVE) v1.0.5 **Required**.
+* Community Base Addons (CBA) v3.1.0.
+* Dynamic-AI-Creator (DAC) v3.1b addon version. **Required**.
+* RHS United States Armed Forces (RHS USAF) v0.4.1.1. **Required**.
+* T8-Units v0.7. **Required**.
+* Task Force Arrowhead Radio (TFAR) v0.9.12.
+
 ## Detailed mission description
 
-Detailed description of the mission. This text can be the same as the one posted on the forums.
+### SITREP
+
+With the eastern part of Altis secured and the central front halted for weeks, the high command in Altis
+has decided to change strategies. A squad of marines, consisting of two fire teams and one sniper team,
+will be deployed at the north of Altis in order to perform a quick attack at the enemy camp. The objective
+is to destroy their air defence capabilities.
+
+Due to the fact that the majority of the troops have been assigned to the central defense in order to
+prevent the avance of enemy troops, the squad *Schattenschlag* will be completely alone. Nevertheless,
+the artillery battery *Feuer Regen* has been able to infiltrate the enemy lines, and has positioned itself
+close enough to give support during the attack. However, this is a high risk position. It is advisable,
+therefore, speed and aggressiveness!
+
+### Mission and Execution
+
+**Destroy the anti air batteries** in order to reduce the defensive capabilities of the troops stationed
+**at the north of Altis**.
+
+**Main task**
+* Destroy the anti air defense units.
+
+**Execution**
+* Insertion at (147,226).
+* Destroy the enemy defense assets at the coordinates (142,212) coordinates.
+* Evacuate at (166,217).
+
+### Intelligence
+
+**Allied forces**
+
+* Squad *Schattenschlag*.
+* Artillery battery *Feuer Regen*.
+
+**Enemy forces**
+
+* Enemy air defense units are located near an enemy camp.
+* Armored units have not been spotted.
+
+### Administration/Logistics
+
+**Suport**
+* Artillery battery *Feuer Regen* with: 3 SADARM, 1 SMOKE and 1 HE.
+
+**Supply**
+* Without additional supplies.
+
+### Roles and radio frequencies
+
+* Squad *Schattenschlag  1*: frequency 200 kHz.
+  * Fireteam *Schattenschlag 1-1*: Radio frequency 201 kHz.
+    * Squad leader.
+    * JTAC.
+    * Rifleman (AT4).
+    * Granadier.
+    * Automatic Rifleman (M249).
+  * Fireteam *Schattenschlag 1-2*: Radio frequency 202 kHz.
+    * Team leader.
+    * Corpsman.
+    * Anti-armor (Javelin).
+    * Explosives
+    * Machinegunner.
+  * Sniper team *Schattenschlag 1-3*: Radio frequency 203 kHz.
+    * Sniper.
+    * Spotter.
 
 # Arma 3 Basic Mission Template (A3-BMT)
 
