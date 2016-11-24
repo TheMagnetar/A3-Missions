@@ -1,12 +1,14 @@
-# Mission name
+# Operation Ghost
 
-<Banner URL>
+<p align="center">
+    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co%4008-12_Ghost.Altis/images/bmt_op_ghost.jpg">
+</p>
 
 Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
 
-**Mission name**: Mission name.
+**Mission name**: Operation Ghost.
 
-**Version**: vx.x (date).
+**Version**: v1.1 (2015/10/17).
 
 **Author**: Author name.
 
@@ -18,20 +20,121 @@ Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
 
 **Minimum number of players**: Maximum number of players suggested by the author.
 
-**Respawn**: Respawn type (None, bird, base, ...).
+**Respawn**: None (Spectator).
 
-**Dificulty**: Mission Dificulty.
+**Dificulty**: Very high.
 
-**Mission summary**: Brief description of the mission.
+**Mission summary**: *Operation Ghost* is a mission where two fire teams and a sniper team must eliminate an enemy officer in a highly populated civilian area. In order
+to complete the objective, between 8 to 12 well coordinated players are required, since it is considered a difficult mission. The task is not updated once it is completed
+and therefore, the players must decide if they have completed it or not.
 
 **Arma 3 Basic Mission Template (A3-BMT)**: v1.0 (https://github.com/TheMagnetar/Basic-Mission-Template)
 by TheMagnetar.
 
 **Necessary or recommended addons**: List of necessary and/or recommended addons.
 
+* Advanced Combat Environment (ACE 3) v3.8.1.
+* Advanced Combat Radio Environment (ACRE 2) v2.2.0.
+* Community Base Addons (CBA) v3.1.0.
+* Dynamic-AI-Creator (DAC) v3.1b addon version. **Required**.
+* RHS United States Armed Forces (RHS USAF) v0.4.1.1. **Required**.
+* Task Force Arrowhead Radio (TFAR) v0.9.12.
+
 ## Detailed mission description
 
-Detailed description of the mission. This text can be the same as the one posted on the forums.
+### SITREP
+
+The unrelenting advance of the CSAT forces has coerced the allied countries to intervene in order to stop
+the constant annexion of territory using brute force. The island of Altis has been considered a key
+strategic point to achieve control of de Mediterranean sea. After several trials, a foothold has been
+secured at the north-east part of Altis but the situation is far from being considered safe.
+
+Through a series of cell phone interventions, the intelligence service has discovered that the latest defeats
+of the CSAT forces in the Mediterranean have made one of their most charismatic leaders, colonel Ohmid
+Raheem, to be at the centre of critics. The presence of two fations, those loial to the colonel and those
+who believe his golden years are over, opens the possibility of generating internal conflicts if he is
+eliminated that would facilitate future military operations in the island.
+
+Conscious of the precariousness of his situation, colonel Ohmid Raheem has surrounded himself by his most
+loyal troops and moved to the north of Altis in order to personally command a supposed grand scale attack
+to recover the total control of the island, establishing his base of operations in a holiday resort with
+strong civilian presence. This is not the first time that Ohmid Raheem uses civilians as human shields.
+
+### Mission and Execution
+
+Two infantry teams and one sniper team will be deployed in the north-west of Sofia, Altis, with the objective of **eliminating the colonel Ohmid Raheem**. He coordinates the military operations in the north of Altis from the coast.
+
+Once the task is completed, the allied forces will head to Sofia in order to regroup with the rest of the allied forces and prepare the offensive to retake the north part of Altis.
+
+<center>Operation Ghost.</center>
+<p align="center">
+    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co%4008-12_Ghost.Altis/images/Map.png">
+</p>
+
+<p align="center">
+    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co%4008-12_Ghost.Altis/images/OhmidRaheem.jpg">
+</p>
+<center>Colonel Ohmid Raheem a week ago.</center>
+
+**Main task**
+* Eliminate the colonel Ohmid Raheem.
+
+**Execution**
+* Insertion at LZ1.
+* Approach the area of operations and eliminate the objective.
+* Minimise civilian casualties in order to enhance further collaboration.
+* Regroup at Sofia.
+
+**Execution**
+
+### Intelligence
+
+**Area of operations**
+
+<p align="center">
+    <img src="https://github.com/TheMagnetar/A3-Missions/blob/master/co%4008-12_Ghost.Altis/images/AO_Summer.jpg">
+</p>
+<center>The area of operations in summer.</center>
+
+**Allied forces**
+
+* Due to the possibility of an imminent enemy attack, no additional troops could be assigned to this mission.
+The presence of civilians in the area of operations make CAS support non-viable..
+
+**Enemy forces**
+
+* Strong presence of enemy forces in the area of operations. Armored vehicles have been sighted.
+
+**Civilians**
+
+* Strong presence of civilian population.
+
+### Administration/Logistics
+
+**Suport**
+* Without additional support.
+
+**Supply**
+* Without resupply.
+
+### Roles and radio frequencies
+
+* Squad *Alpha  1*: frequency 200 kHz.
+  * Fireteam *Alpha 1-1*: Radio frequency 201 kHz.
+    * Squad leader.
+    * Rifleman (AT4).
+    * Automatic Rifleman (M249).
+    * Granadier.
+    * Medic.
+  * Fireteam *Alpha 1-2*: Radio frequency 202 kHz.
+    * Team leader.
+    * Anti-armor (Javelin).
+    * Machinegunner.
+    * Rifleman (AT4).
+    * Medic.
+  * Sniper team *Alpha 1-3*: Radio frequency 203 kHz.
+    * Sniper.
+    * Spotter.
 
 # Arma 3 Basic Mission Template (A3-BMT)
 

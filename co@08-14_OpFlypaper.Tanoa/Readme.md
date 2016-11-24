@@ -55,7 +55,7 @@ order to establish dominance has opened a window for us to counter attack and de
 aerial assets. The airfield defenses are still not completed and a small team should be able to infiltrate
 and sabotage them.
 
-### MISSION AND EXECUTION
+### Mission and Execution
 
 The Russian airfield has its static defenses not yet completed. The team should infiltrate the airfield and
 sabotage the enemy air assets. Contact with enemy patrols should be minimised: stealth is a priority.
@@ -72,7 +72,7 @@ sabotage the enemy air assets. Contact with enemy patrols should be minimised: s
 * Destroy as many enemy air assets as possible.
 * Head towards the extraction point and blend in with the population.
 
-### INTEL
+### Intelligence
 
 **Allied forces**
 * Squad *Alpha 1*.
@@ -86,7 +86,7 @@ sabotage the enemy air assets. Contact with enemy patrols should be minimised: s
 **Civilians**
 * Civilians live in the adjacent towns.
 
-### ADMINISTRATION/LOGISTICS
+### Administration/Logistics
 
 **Support**
 * None
@@ -94,7 +94,7 @@ sabotage the enemy air assets. Contact with enemy patrols should be minimised: s
 **Supply**
 * Ammo box is delivered during HALO.
 
-### ROLES AND RADIO FREQUENCIES
+### Roles and radio frequencies
 
 * Squad *Alpha 1*: frequency 200 kHz.
   * Fireteam *Alpha 1-1*: Radio frequency 201 kHz.

@@ -14,7 +14,7 @@ Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
 
 **Contributors**: -.
 
-**Game type**: Coop, TvT, PvP, ZvZ.
+**Game type**: Coop.
 
 **Minimum number of players**: 8.
 
@@ -34,7 +34,8 @@ using ACE 3 slideshow. Players have at their disposal CAS and EVAC.
 **Arma 3 Basic Mission Template (A3-BMT)**: v1.0 (https://github.com/TheMagnetar/Basic-Mission-Template)
 by TheMagnetar.
 
-**Necessary or recommended addons**: This mission works with the following set of addons:
+**Necessary or recommended addons**: List of necessary and/or recommended addons.
+
 * Advanced Combat Environment 3 (ACE3) v3.5.1. **Required**.
 * Advanced Combat Radio Environment 2 (ACRE2) v2.1.0.
 * Advanced Light Infantry Virtual Environment (ALIVE) v1.0.2. **Required**.
@@ -57,7 +58,7 @@ Due to the active troop withdrawal due to political reasons, a small but highly 
 been charged with the task of rescuing the captured marines. It is expected, with this mission, to deliver
 a clear message to any insurgent group: all attacks will be answered in kind!
 
-### MISSION AND EXECUTION
+### Mission and Execution
 
 Two infantry teams and one sniper team will be deployed in Kunduz, Afghanistan. Their objective will
 consist on rescuing, with the collaboration of the Afghan Police, the marines captured last week in an
@@ -84,7 +85,7 @@ effectively counterattacking an air assault or an assault during the night.
 * Head towards the allied base Foxtrot from the __north-east__ in order to provide with medical treatment
 to the rescued marines.
 
-### INTEL
+### Intelligence
 
 **Allied forces**
 * Squad *Alpha 1*.
@@ -99,7 +100,7 @@ not have night vision.
 Strong civilian presence in the area of operations. It has been observed in previous operations that they
 simpathise with insurgent forces and they are slightly hostile towards allied forces.
 
-### ADMINISTRATION / LOGISTICS
+### Administration/Logistics
 
 **Support**
 * *November 1*: CAS support.
@@ -108,7 +109,7 @@ simpathise with insurgent forces and they are slightly hostile towards allied fo
 **Supply**
 * Without resupply.
 
-### ROLES AND RADIO FREQUENCIES
+### Roles and radio frequencies
 
 * Squad *Alpha 1*: Radio frequency 200 kHz.
   * Fireteam *Alpha 1-1*: Radio frequency 201 kHz.
