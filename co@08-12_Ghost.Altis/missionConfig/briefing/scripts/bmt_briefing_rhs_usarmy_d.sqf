@@ -41,7 +41,7 @@ _radio = player createDiaryRecord ["diary", ["Radio frequencies","
 <br/>
 - Fireteam ""Alpha 1-2"": 202 kHz.
 <br/>
-- Fireteam ""Alpha 1-3"": 203 kHz.
+- Sniper team ""Alpha 1-3"": 203 kHz.
 "]];
 
 //=======================================================================================================//

@@ -10,19 +10,19 @@ Mission generated using the "Arma 3 Basic Mission Template" (A3-BMT).
 
 **Version**: v1.1 (2015/10/17).
 
-**Author**: Author name.
+**Author**: TheMagnetar.
 
-**Contributors**: Names of the contributers.
+**Contributors**: -.
 
-**Game type**: Game type (Coop, TvT, PvP, ZvZ, ...).
+**Game type**: Coop.
 
-**Minimum number of players**: Minimum number of players suggested by the author.
+**Minimum number of players**: 8.
 
-**Minimum number of players**: Maximum number of players suggested by the author.
+**Minimum number of players**: 12.
 
 **Respawn**: None (Spectator).
 
-**Dificulty**: Very high.
+**Difficulty**: Very high.
 
 **Mission summary**: *Operation Ghost* is a mission where two fire teams and a sniper team must eliminate an enemy officer in a highly populated civilian area. In order
 to complete the objective, between 8 to 12 well coordinated players are required, since it is considered a difficult mission. The task is not updated once it is completed
@@ -85,8 +85,6 @@ Once the task is completed, the allied forces will head to Sofia in order to reg
 * Minimise civilian casualties in order to enhance further collaboration.
 * Regroup at Sofia.
 
-**Execution**
-
 ### Intelligence
 
 **Area of operations**
@@ -97,16 +95,13 @@ Once the task is completed, the allied forces will head to Sofia in order to reg
 <center>The area of operations in summer.</center>
 
 **Allied forces**
-
 * Due to the possibility of an imminent enemy attack, no additional troops could be assigned to this mission.
 The presence of civilians in the area of operations make CAS support non-viable..
 
 **Enemy forces**
-
 * Strong presence of enemy forces in the area of operations. Armored vehicles have been sighted.
 
 **Civilians**
-
 * Strong presence of civilian population.
 
 ### Administration/Logistics

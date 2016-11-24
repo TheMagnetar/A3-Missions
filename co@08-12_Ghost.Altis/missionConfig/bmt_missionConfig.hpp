@@ -23,7 +23,7 @@ class Header {
 //=======================================================================================================//
 class bmt_config {
     // Variables affecting the admin briefing.
-    bmt_config_testedAddons = "- Advanced Combat Environment 3 (ACE3) v3.8.1.<br/>- Advanced Combat Radio Environment 2 (ACRE2) v2.2.0.<br/>- Community Base Addons (CBA) v3.01.<br/>- Dynamic-AI-Creator (DAC) v3.1b (Required).<br/>- RHS United States Army Forces (RHS USAF) v0.4.1.1. (Required)<br/>- Task Force Arrowhead Radio (TFAR) v0.9.12.";
+    bmt_config_testedAddons = "- Advanced Combat Environment 3 (ACE3) v3.8.1.<br/>- Advanced Combat Radio Environment 2 (ACRE2) v2.2.0.<br/>- Community Base Addons (CBA) v3.1.<br/>- Dynamic-AI-Creator (DAC) v3.1b (Required).<br/>- RHS United States Army Forces (RHS USAF) v0.4.1.1. (Required)<br/>- Task Force Arrowhead Radio (TFAR) v0.9.12.";
     bmt_config_templateVersion = "v1.0 (2016-05-14).";
     bmt_config_missionVersion = "v1.1 (2015-10-17).";
     bmt_config_missionCollaborators = "-";
